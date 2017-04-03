@@ -6,6 +6,11 @@ author:
  name: Paul Hibbitts
  email: paul@hibbittsdesign.org
  url: http://hibbittsdesign.org
+homepage: https://github.com/hibbitts-design/grav-theme-learn2-git-sync
+demo: demo.hibbittsdesign.org/grav-learn2-git-sync/
+keywords: learn2, gitsync
+bugs: https://github.com/hibbitts-design/grav-theme-learn2-git-sync/issues
+license: MIT
 
 dependencies:
   - learn2
