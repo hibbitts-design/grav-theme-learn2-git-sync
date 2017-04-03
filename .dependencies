@@ -1,0 +1,17 @@
+git:
+    learn2:
+        url: https://github.com/getgrav/grav-theme-learn2
+        path: user/themes/learn2
+        branch: master
+    external_links:
+        url: https://github.com/Sommerregen/grav-plugin-external-links
+        path: user/plugins/external_links
+        branch: master
+    git-sync:
+        url: https://github.com/trilbymedia/grav-plugin-git-sync
+        path: user/plugins/git-sync
+        branch: master
+    youtube:
+        url: https://github.com/getgrav/grav-plugin-youtube
+        path: user/plugins/youtube
+        branch: master

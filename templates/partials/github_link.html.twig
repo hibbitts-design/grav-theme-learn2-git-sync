@@ -1,0 +1,19 @@
+{% if theme_config.github.tree  %}
+  <a class="github-link" href="{{ theme_config.github.tree ~  ('/'~page.filePathClean)|replace({'/user/':'/'}) }} " target="_blank"><i class="fa fa-{{ theme_config.github.icon }}"></i> {{ 'THEME_LEARN2_GIT_EDIT_THIS_PAGE'|t }}</a>
+{% else %}
+  {% if not config.plugins['git-sync'].enabled  %}
+    {% set admin_panel_appearance_url = grav.base_url ~ '/admin/plugins/' %}
+    <a class="github-link" href="{{ admin_panel_appearance_url }}" title="{{ 'THEME_LEARN2_GIT_ADD_SETUP_GIT_SYNC_PLUGIN'|t }}">
+    <i class="fa fa-cog" aria-hidden="true"></i> {{ 'THEME_LEARN2_GIT_ADD_SETUP_GIT_SYNC_PLUGIN'|t }}</a>
+  {% else %}
+    {% if config.plugins['git-sync'].enabled and config.plugins['git-sync'].repository is empty %}
+      {% set admin_panel_appearance_url = grav.base_url ~ '/admin/plugins/git-sync' %}
+      <a class="github-link" href="{{ admin_panel_appearance_url }}" title="{{ 'THEME_LEARN2_GIT_SETUP_GIT_SYNC_PLUGIN'|t }}">
+      <i class="fa fa-cog" aria-hidden="true"></i> {{ 'THEME_LEARN2_GIT_SETUP_GIT_SYNC_PLUGIN'|t }}</a>
+    {% else %}
+      {% set admin_panel_appearance_url = grav.base_url ~ '/admin/themes/learn2gitsync' %}
+      <a class="github-link" href="{{ admin_panel_appearance_url }}" title="{{ 'THEME_LEARN2_GIT_SETUP_GIT_LINK'|t }}">
+      <i class="fa fa-cog" aria-hidden="true"></i> {{ 'THEME_LEARN2_GIT_SETUP_GIT_LINK'|t }}</a>
+    {% endif %}
+  {% endif %}
+{% endif %}
