@@ -1,6 +1,6 @@
 name: Learn2 Git Sync
 version: 0.9.0
-description: "A customized version of the Learn2 theme for use with the Git Sync plugin. A customized version of the Learn2 theme for use with the Git Sync plugin. Also installs the Admin Panel."
+description: "A customized version of the Learn2 theme for use with the Git Sync plugin. Also installs the Admin Panel."
 icon: git
 author:
  name: Paul Hibbitts
