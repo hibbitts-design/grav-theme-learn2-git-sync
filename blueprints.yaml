@@ -13,6 +13,7 @@ bugs: https://github.com/hibbitts-design/grav-theme-learn2-git-sync/issues
 license: MIT
 
 dependencies:
+  - admin
   - learn2
   - external_links
   - git-sync
