@@ -44,8 +44,8 @@ This command will check your Grav install to see if your Learn2 with Git Sync th
 
 Manually updating Learn2 with Git Sync is pretty simple. Here is what you will need to do to get this done:
 
-* Delete the `your/site/user/themes/learn2` directory.
-* Download the new version of the Learn2 with Git Sync theme from either [GitHub](https://github.com/getgrav/grav-theme-learn2-git-sync) or [GetGrav.org](http://getgrav.org/downloads/themes#extras).
+* Delete the `your/site/user/themes/learn2-git-sync` directory.
+* Download the new version of the Learn2 with Git Sync theme from either [GitHub](https://github.com/hibbitts-design/grav-theme-learn2-git-sync) or [GetGrav.org](http://getgrav.org/downloads/themes#extras).
 * Unzip the zip file in `your/site/user/themes` and rename the resulting folder to `learn2-git-sync`.
 * Clear the Grav cache. The simplest way to do this is by going to the root Grav directory in terminal and typing `bin/grav clear-cache`.
 
