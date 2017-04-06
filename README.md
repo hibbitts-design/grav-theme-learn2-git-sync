@@ -8,7 +8,7 @@ Learn2 with Git Sync is a customized version of the default [Grav Learn](http://
 
 Installing the Learn2 with Git Sync theme can be done in one of two ways. Our GPM (Grav Package Manager) installation method enables you to quickly and easily install the theme with a simple terminal command, while the manual method enables you to do so via a zip file.
 
-The theme is designed to be used to provide a documentation site. You can see this in action at [](http://learn.hibbittsdesign.org)
+The theme is designed to be used to provide a documentation site. You can see this in action at [learn.hibbittsdesign.org](http://learn.hibbittsdesign.org)
 
 ## GPM Installation (Preferred)
 
