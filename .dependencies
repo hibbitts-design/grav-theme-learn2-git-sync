@@ -1,32 +1,4 @@
 git:
-    admin:
-        url: https://github.com/getgrav/grav-plugin-admin
-        path: user/plugins/admin
-        branch: master
-    email:
-        url: https://github.com/getgrav/grav-plugin-email
-        path: user/plugins/email
-        branch: master
-    external_links:
-        url: https://github.com/Sommerregen/grav-plugin-external-links
-        path: user/plugins/external_links
-        branch: master
-    form:
-        url: https://github.com/getgrav/grav-plugin-form
-        path: user/plugins/form
-        branch: master
-    git-sync:
-        url: https://github.com/trilbymedia/grav-plugin-git-sync
-        path: user/plugins/git-sync
-        branch: master
-    login:
-        url: https://github.com/getgrav/grav-plugin-login
-        path: user/plugins/login
-        branch: master
-    youtube:
-        url: https://github.com/getgrav/grav-plugin-youtube
-        path: user/plugins/youtube
-        branch: master
     learn2:
         url: https://github.com/getgrav/grav-theme-learn2
         path: user/themes/learn2
