@@ -2,7 +2,7 @@
 ## 05/30/2017
 
 1. [](#improved)
-    * Improved wording for 'Git Repository Tree URL' site config option
+    * Improved wording for 'Git Repository Tree URL' theme config option
 
 # v0.9.3
 ## 04/18/2017
