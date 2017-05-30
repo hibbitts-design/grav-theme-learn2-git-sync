@@ -60,8 +60,9 @@ form:
     github.icon:
         type: input.text
         size: small
-        label: Git Font Awesome Icon
+        label: Git Link Font Awesome Icon
         default: 'github'
+        description: Icon short name.
         help: Enter the short name of the Font Awesome icon for the link, for example 'gitlab'.
         validate:
             type: text
@@ -69,4 +70,5 @@ form:
     github.tree:
         type: text
         label: Git Repository Tree URL
-        description: URL path to the Git repository, up to but not including '/pages/...'.
+        help: Enter the URL that leads to the pages folder of your Git Repository.
+        description: "URL path to the pages folder, but with '/pages' and everything following it removed. For example, 'https://github.com/paulhibbitts/demo-grav-learn2-with-git-sync/tree/master'."
