@@ -1,3 +1,9 @@
+# v0.9.5
+## XX/XX/2017
+
+1. [](#bugfix)
+    * Removed problematic CSS class for Git Sync note area
+
 # v0.9.4
 ## 05/30/2017
 
