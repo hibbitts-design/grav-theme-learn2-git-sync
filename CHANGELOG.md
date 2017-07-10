@@ -1,6 +1,11 @@
 # v0.9.5
-## XX/XX/2017
+## 07/11/2017
 
+1. [](#new)
+    * Added support for RSS feed
+    * Added Author field within Page Options
+1. [](#improved)
+    * Improved accessibility of sidebar and body link appearance
 1. [](#bugfix)
     * Removed problematic CSS class for Git Sync note area
 
