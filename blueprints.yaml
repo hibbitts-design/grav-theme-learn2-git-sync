@@ -16,6 +16,7 @@ dependencies:
   - admin
   - learn2
   - external_links
+  - feed
   - git-sync
   - youtube
 
