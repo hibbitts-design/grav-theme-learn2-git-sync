@@ -1,3 +1,9 @@
+# v0.9.6
+## 07/12/2017
+
+1. [](#bugfix)
+    * Removed Author field within Page Options (Author taxonomy tag added to Learn2 with Git Sync Skeleton)
+
 # v0.9.5
 ## 07/11/2017
 
