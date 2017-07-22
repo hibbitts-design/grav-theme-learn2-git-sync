@@ -1,8 +1,10 @@
 # Learn2 with Git Sync
 
-![Learn2 with Git Sync](screenshot.jpg)
-
 Learn2 with Git Sync is a customized version of the default [Grav Learn](http://learn.getgrav.org) theme. Simple, fast and modern.
+
+Disclaimer unexperienced users: [Here](https://github.com/hibbitts-design/grav-skeleton-learn2-with-git-sync) you can find a skeleton version of Learn2-Git-Sync for grav which is easier to install. 
+
+![Learn2 with Git Sync](screenshot.jpg)
 
 # Installation
 
