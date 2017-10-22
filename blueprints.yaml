@@ -1,5 +1,5 @@
 name: Learn2 Git Sync
-version: 0.9.6
+version: 0.9.7
 description: "A customized version of the Learn2 theme for use with the Learn2 with Git Sync skeleton package."
 icon: git
 author:
@@ -61,8 +61,7 @@ form:
     github.icon:
         type: input.text
         size: small
-        label: Git Link Font Awesome Icon
-        default: 'github'
+        label: Custom Git Link Font Awesome Icon
         description: Icon short name.
         help: Enter the short name of the Font Awesome icon for the link, for example 'gitlab'.
         validate:
@@ -70,6 +69,6 @@ form:
 
     github.tree:
         type: text
-        label: Git Repository Tree URL
+        label: Custom Git Repository Tree URL
         help: Enter the URL that leads to the pages folder of your Git Repository.
         description: "URL path to the pages folder, but with '/pages' and everything following it removed. For example, 'https://github.com/paulhibbitts/demo-grav-learn2-with-git-sync/tree/master'."
