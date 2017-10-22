@@ -12,7 +12,8 @@
   {% if theme_config.github.icon %}
     {% set git_repo_link_icon = theme_config.github.icon %}
   {% endif %}
-  <a class="github-link" href="{{ git_repo_link_url ~  ('/'~page.filePathClean)|replace({'/user/':'/'}) }} " target="_blank">
+  {% set git_repo_edit_link_url = git_repo_link_url ~  ('/'~page.filePathClean)|replace({'/user/':'/'}) %}
+  <a class="github-link" href="{{ git_repo_edit_link_url }} " target="_blank">
   <i class="fa fa-{{ git_repo_link_icon }}"></i>
   {{ 'THEME_LEARN2_GIT_EDIT_THIS_PAGE'|t }}</a>
 {% else %}
