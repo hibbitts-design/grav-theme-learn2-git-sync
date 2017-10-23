@@ -18,6 +18,7 @@ dependencies:
   - external_links
   - feed
   - git-sync
+  - highlight
   - youtube
 
 form:
