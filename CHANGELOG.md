@@ -1,3 +1,9 @@
+# v0.9.9
+## 10/23/2017
+
+1. [](#improved)
+    * Added Highlight plugin as a dependency
+
 # v0.9.8
 ## 10/23/2017
 
