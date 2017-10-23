@@ -5,7 +5,7 @@ google_analytics_code:                              # Enter your `UA-XXXXXXXX-X`
 home_url:                                           # http://getgrav.org
 github:
     position: top                                   # top | bottom | off
-    icon: github                                    # FontAwesome icon
+    icon:                                           # FontAwesome icon
     tree:
 
 streams:
