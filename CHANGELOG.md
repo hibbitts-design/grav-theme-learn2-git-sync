@@ -1,3 +1,9 @@
+# v0.9.8
+## 10/23/2017
+
+1. [](#bugfix)
+    * Removed unneeded theme default for custom icon in Git Sync link
+
 # v0.9.7
 ## 10/22/2017
 
