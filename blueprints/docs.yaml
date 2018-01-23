@@ -1,0 +1,25 @@
+title: Docs
+'@extends':
+    type: default
+    context: blueprints://pages
+
+form:
+  fields:
+    tabs:
+
+      fields:
+        content:
+          type: tab
+
+          fields:
+
+            content:
+                markdown: true
+                default: "Your page content goes here."
+
+        advanced:
+          fields:
+            overrides:
+              fields:
+                header.visible:
+                  default: 1

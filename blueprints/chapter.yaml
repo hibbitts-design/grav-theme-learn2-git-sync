@@ -1,0 +1,18 @@
+title: Chapter
+'@extends':
+    type: default
+    context: blueprints://pages
+
+form:
+  fields:
+    tabs:
+
+      fields:
+        content:
+          type: tab
+
+          fields:
+
+            content:
+                markdown: true
+                default: "### Chapter Number\n\n# Chapter Title\n\nChapter description."
