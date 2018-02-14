@@ -32,16 +32,16 @@
       {% set git_sync_repo_link = config.plugins['git-sync'].repository %}
       {% if 'github' in git_sync_repo_link %}
         {% set git_repo_link_icon = "github" %}
-        {% set git_repo_edit_link_url = (git_sync_repo_link|replace({'.git':'/'})) ~ 'blob/master' ~ (page.filePathClean)|replace({'user/':'/'}) %}
+        {% set git_repo_edit_link_url = (git_sync_repo_link|replace({'.git':''})|trim('/', 'right')) ~ '/blob/master' ~ (page.filePathClean)|replace({'user/':'/'}) %}
       {% elseif 'gitlab' in git_sync_repo_link %}
         {% set git_repo_link_icon = "gitlab" %}
-        {% set git_repo_edit_link_url = (git_sync_repo_link|replace({'.git':'/'})) ~ 'blob/master' ~ (page.filePathClean)|replace({'user/':'/'}) %}
+        {% set git_repo_edit_link_url = (git_sync_repo_link|replace({'.git':''})|trim('/', 'right')) ~ '/blob/master' ~ (page.filePathClean)|replace({'user/':'/'}) %}
       {% elseif 'bitbucket' in git_sync_repo_link %}
         {% set git_repo_link_icon = "bitbucket" %}
-        {% set git_repo_edit_link_url = (git_sync_repo_link|replace({'.git':'/'})) ~ 'src/master' ~ (page.filePathClean)|replace({'user/':'/'}) %}
+        {% set git_repo_edit_link_url = (git_sync_repo_link|replace({'.git':''})|trim('/', 'right')) ~ '/src/master' ~ (page.filePathClean)|replace({'user/':'/'}) %}
       {% else %}
   	    {% set git_repo_link_icon = "git" %}
-        {% set git_repo_edit_link_url = (git_sync_repo_link|replace({'.git':'/'})) ~ 'blob/master' ~ (page.filePathClean)|replace({'user/':'/'}) %}
+        {% set git_repo_edit_link_url = (git_sync_repo_link|replace({'.git':''})|trim('/', 'right')) ~ '/blob/master' ~ (page.filePathClean)|replace({'user/':'/'}) %}
   	  {% endif %}
       {% if theme_config.github.icon %}
         {% set git_repo_link_icon = theme_config.github.icon %}
