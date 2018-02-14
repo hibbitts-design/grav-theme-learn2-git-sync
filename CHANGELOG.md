@@ -1,3 +1,9 @@
+# v0.9.83
+## 02/13/2018
+
+1. [](#bugfix)
+    * Fixed trailing slash issue with "Edit this page" link (thanks Amiram Korach)
+
 # v0.9.82
 ## 01/23/2018
 
