@@ -1,3 +1,9 @@
+# v0.9.84
+## 03/01/2018
+
+1. [](#improved)
+    * Better aligned Git Sync Link Twig code with other Git Sync themes
+
 # v0.9.83
 ## 02/13/2018
 
