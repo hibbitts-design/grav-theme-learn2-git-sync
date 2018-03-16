@@ -1,10 +1,10 @@
 name: Learn2 Git Sync
-version: 0.9.84
+version: 1.0.0
 description: "A customized version of the Learn2 theme for use with the Learn2 with Git Sync skeleton package."
 icon: git
 author:
- name: Paul Hibbitts
- email: paul@hibbittsdesign.org
+ name: Hibbitts Design
+ email: hello@hibbittsdesign.org
  url: http://hibbittsdesign.org
 homepage: https://github.com/hibbitts-design/grav-theme-learn2-git-sync
 demo: http://demo.hibbittsdesign.org/grav-learn2-git-sync/
