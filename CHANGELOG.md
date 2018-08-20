@@ -2,6 +2,12 @@
 ## 08/20/2018
 
 1. [](#new)
+    * Added experimental support for TNTSearch plugin
+
+# v1.0.1
+## 08/20/2018
+
+1. [](#new)
     * Added configuration for default taxonomy category in theme setting
 1. [](#improved)
     * Updated theme blueprints
