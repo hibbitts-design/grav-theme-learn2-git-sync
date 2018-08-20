@@ -40,22 +40,17 @@
     {% endblock %}
 </head>
 <body class="searchbox-hidden {{ page.header.body_classes }}" data-url="{{ page.route }}">
-    {% block sidebar %}
-    <nav id="sidebar">
-        <div id="header-wrapper">
-            <div id="header">
-                <a id="logo" href="{{ theme_config.home_url ?: base_url_absolute }}">{% include 'partials/logo.html.twig' %}</a>
-                <div class="searchbox">
-                    <label for="search-by"><i class="fa fa-search"></i></label>
-                    <input id="search-by" type="text" placeholder="{{ 'THEME_LEARN2_SEARCH_DOCUMENTATION'|t }}"
-                           data-search-input="{{ base_url_relative }}/search.json/query"/>
-                    <span data-search-clear><i class="fa fa-close"></i></span>
-                </div>
-            </div>
-        </div>
-        {% include 'partials/sidebar.html.twig' %}
-    </nav>
-    {% endblock %}
+  {% block sidebar %}
+  <nav id="sidebar">
+      <div id="header-wrapper">
+          <div id="header">
+              <a id="logo" href="{{ theme_config.home_url ?: base_url_absolute }}">{% include 'partials/logo.html.twig' %}</a>
+              {% include 'partials/search.html.twig' %}
+          </div>
+      </div>
+      {% include 'partials/sidebar.html.twig' %}
+  </nav>
+  {% endblock %}
 
     {% block body %}
     <section id="body">
@@ -66,7 +61,7 @@
 
             {% block topbar %}{% if theme_config.github.position == 'top' or config.plugins.breadcrumbs.enabled %}
             <div id="top-bar">
-                {% if theme_config.github.position == 'top' %}
+                {% if theme_config.github.position == 'top' and not ('search' in page.name)  %}
                 <div id="top-github-link">
                 {% include 'partials/github_link.html.twig' %}
                 </div>
@@ -81,7 +76,7 @@
             {% block content %}{% endblock %}
 
             {% block footer %}
-                {% if theme_config.github.position == 'bottom' %}
+                {% if theme_config.github.position == 'bottom' and not ('search' in page.name) %}
                 {% include 'partials/github_note.html.twig' %}
                 {% endif %}
             {% endblock %}
