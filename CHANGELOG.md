@@ -3,6 +3,8 @@
 
 1. [](#new)
     * Added configuration for default taxonomy category in theme setting
+1. [](#improved)
+    * Updated theme blueprints
 
 # v1.0.0
 ## 03/15/2018
