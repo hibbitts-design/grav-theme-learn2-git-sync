@@ -16,3 +16,10 @@ form:
             content:
                 markdown: true
                 default: "### Chapter Number\n\n# Chapter Title\n\nChapter description."
+
+        options:
+          fields:
+            header.taxonomy.category:
+              type: hidden
+              label: Default Taxonomy Category
+              data-default@: '\Grav\Theme\Learn2GitSync::getdefaulttaxonomycategory'

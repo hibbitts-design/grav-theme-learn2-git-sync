@@ -7,6 +7,7 @@ github:
     position: top                                   # top | bottom | off
     icon:                                           # FontAwesome icon
     tree:
+default_taxonomy_category: docs
 
 streams:
  schemes:

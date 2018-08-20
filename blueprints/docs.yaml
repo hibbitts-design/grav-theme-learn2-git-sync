@@ -17,6 +17,13 @@ form:
                 markdown: true
                 default: "Your page content goes here."
 
+        options:
+          fields:
+            header.taxonomy.category:
+              type: hidden
+              label: Default Taxonomy Category
+              data-default@: '\Grav\Theme\Learn2GitSync::getdefaulttaxonomycategory'
+
         advanced:
           fields:
             overrides:
