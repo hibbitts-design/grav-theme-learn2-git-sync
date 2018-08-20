@@ -1,3 +1,9 @@
+# v1.0.1
+## 08/20/2018
+
+1. [](#new)
+    * Added configuration for default taxonomy category in theme setting
+
 # v1.0.0
 ## 03/15/2018
 
