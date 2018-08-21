@@ -1,3 +1,9 @@
+# v1.0.4
+## 08/21/2018
+
+1. [](#improved)
+    * Updated theme dependencies
+
 # v1.0.3
 ## 08/21/2018
 
