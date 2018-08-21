@@ -1,3 +1,11 @@
+# v1.0.5
+## 08/21/2018
+
+1. [](#improved)
+    * Updated TNTSearch box label
+1. [](#new)
+    * Added TNTSearch (full-text search engine) plugin to theme dependencies
+
 # v1.0.4
 ## 08/21/2018
 
