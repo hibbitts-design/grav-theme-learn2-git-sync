@@ -1,3 +1,9 @@
+# v1.0.6
+## 08/21/2018
+
+1. [](#bugfix)
+    * Updated URL for Advanced Full-text Search link
+
 # v1.0.5
 ## 08/21/2018
 
@@ -13,10 +19,10 @@
     * Updated theme dependencies
 
 # v1.0.3
-## 08/21/2018
+## 08/20/2018
 
 1. [](#bugfix)
-    * Fixed URL for Advanced Search link
+    * Fixed URL for Advanced Full-text Search link
 
 # v1.0.2
 ## 08/20/2018
