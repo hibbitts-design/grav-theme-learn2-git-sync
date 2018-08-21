@@ -1,3 +1,9 @@
+# v1.0.8
+## 08/22/2018
+
+1. [](#improved)
+    * Updated screenshots
+
 # v1.0.7
 ## 08/21/2018
 
