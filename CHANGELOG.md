@@ -1,3 +1,9 @@
+# v1.0.7
+## 08/21/2018
+
+1. [](#improved)
+    * Added SimpleSearch plugin to theme dependencies
+
 # v1.0.6
 ## 08/21/2018
 
