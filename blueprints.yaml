@@ -1,5 +1,5 @@
 name: Learn2 Git Sync
-version: 1.0.8
+version: 1.0.9
 description: "A customized version of the Learn2 theme for use with the Learn2 with Git Sync skeleton package."
 icon: git
 author:
@@ -16,10 +16,12 @@ dependencies:
   - admin
   - breadcrumbs
   - learn2
+  - error
   - external_links
   - feed
   - git-sync
   - highlight
+  - problems
   - simplesearch
   - tntsearch
   - youtube
