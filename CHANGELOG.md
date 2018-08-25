@@ -1,3 +1,9 @@
+# v1.1.0
+## 08/25/2018
+
+1. [](#improved)
+    * Initial multi-language support for Advanced Full-text Search
+
 # v1.0.9
 ## 08/23/2018
 
