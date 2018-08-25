@@ -3,7 +3,7 @@
     {% block content %}
         {{ page.content }}
 
-        {% include 'partials/tntsearch.html.twig' with { in_page: true, placeholder: "Search the documentation..." }%}
+        {% include 'partials/tntsearch.html.twig' with { in_page: true, placeholder: 'THEME_LEARN2_ADVANCED_SEARCH_PLACEHOLDER'|t }%}
     {% endblock %}
 
     {% block footer %}{% endblock %}
