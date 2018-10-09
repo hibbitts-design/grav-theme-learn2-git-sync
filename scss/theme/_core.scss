@@ -12,6 +12,15 @@ a {
 	}
 }
 
+#body-inner {
+	a {
+		&:hover {
+			text-decoration: underline;
+			text-decoration-style: dotted;
+		}
+	}
+}
+
 pre {
 	position: relative;
 }
