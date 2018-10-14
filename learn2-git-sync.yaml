@@ -8,6 +8,7 @@ github:
     icon:                                           # FontAwesome icon
     tree:
 default_taxonomy_category: docs
+style: default
 
 streams:
  schemes:
