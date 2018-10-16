@@ -1,8 +1,11 @@
 # v1.2.0
-## 10/14/2018
+## 10/16/2018
 
 1. [](#new)
-    * Add custom Styles
+    * Added custom styles (thanks @olevik)
+    * Added option to show or hide site title
+1. [](#bugfix)
+    * Fixed issue with default taxonomy categories
 
 # v1.1.0
 ## 08/25/2018
