@@ -1,3 +1,5 @@
-<p><div style="margin-bottom: -5rem;">&nbsp;</div></p>
-<h5><span style="color:white">{{config.site.title}}</span></h5>
-<p><div style="margin-top: -4rem;">&nbsp;</div></p>
+{% if not (theme_config.hide_site_title) %}
+  <p><div style="margin-bottom: -4rem;">&nbsp;</div></p>
+  <h5><span style="color:black">{{config.site.title}}</span></h5>
+  <p><div style="margin-top: -4rem;">&nbsp;</div></p>
+{% endif %}

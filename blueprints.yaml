@@ -62,9 +62,20 @@ form:
 
     siteandpageoptions:
       type: section
-      title: 'Learn2 Theme Options'
+      title: 'Learn 2 Theme Options'
       underline: true
-      
+
+    hide_site_title:
+        type: toggle
+        label: 'Hide Site Title'
+        highlight: 1
+        default: 0
+        options:
+            1: 'Yes'
+            0: 'No'
+        validate:
+            type: bool
+
     style:
       type: select
       size: long
@@ -73,14 +84,7 @@ form:
       default: default
       options:
         default: Default
-        metal: Metal
-        sunrise: Sunrise
-        navy_sunrise: Navy Sunrise
         hoth: Hoth
-        gold: Gold
-        grey: Grey
-        dark_ocean: Dark Ocean
-        arctic: Arctic
 
     top_level_version:
         type: toggle
