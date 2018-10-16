@@ -59,10 +59,10 @@ textarea, input[type="email"], input[type="number"], input[type="password"], inp
     box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(19, 131, 179, 0.7); }
 
 #header {
-  background: #CAD1D9;
+  background: #747474;
   color: #fff;
   text-align: center;
-  padding: 1rem; }
+  padding: 0rem 1rem 2rem 1rem; }
   #header a {
     display: inline-block; }
   #header #logo-svg {
@@ -78,18 +78,18 @@ textarea, input[type="email"], input[type="number"], input[type="password"], inp
   background: #bbc4ce;
   border-radius: 4px; }
   .searchbox label {
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(0, 0, 0, 0.8);
     position: absolute;
     left: 10px;
     top: 3px; }
   .searchbox span {
-    color: rgba(255, 255, 255, 0.6);
+    color: rgba(0, 0, 0, 0.6);
     position: absolute;
     right: 10px;
     top: 3px;
     cursor: pointer; }
     .searchbox span:hover {
-      color: rgba(255, 255, 255, 0.9); }
+      color: rgba(0, 0, 0, 0.9); }
   .searchbox input {
     display: inline-block;
     color: #fff;
@@ -101,13 +101,13 @@ textarea, input[type="email"], input[type="number"], input[type="password"], inp
     margin: 0;
     font-weight: 400; }
     .searchbox input::-webkit-input-placeholder {
-      color: rgba(255, 255, 255, 0.6); }
+      color: rgba(0, 0, 0, 0.6); }
     .searchbox input::-moz-placeholder {
-      color: rgba(255, 255, 255, 0.6); }
+      color: rgba(0, 0, 0, 0.6); }
     .searchbox input:-moz-placeholder {
-      color: rgba(255, 255, 255, 0.6); }
+      color: rgba(0, 0, 0, 0.6); }
     .searchbox input:-ms-input-placeholder {
-      color: rgba(255, 255, 255, 0.6); }
+      color: rgba(0, 0, 0, 0.6); }
 
 #sidebar-toggle {
   display: none; }
@@ -188,7 +188,7 @@ textarea, input[type="email"], input[type="number"], input[type="password"], inp
         line-height: 2rem;
         font-size: 1.1rem; }
         #sidebar ul.topics > li > a b {
-          opacity: 0.5;
+          opacity: 0.75;
           font-weight: normal; }
         #sidebar ul.topics > li > a .fa {
           margin-top: 9px; }
@@ -227,7 +227,7 @@ textarea, input[type="email"], input[type="number"], input[type="password"], inp
         margin: 4px 0 0 0;
         text-align: right; }
       #sidebar ul li.visited > a .read-icon {
-        color: #383F45;
+        color: #AAAAAA;
         display: inline; }
       #sidebar ul li li {
         padding-left: 1rem;

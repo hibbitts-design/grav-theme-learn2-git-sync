@@ -62,7 +62,7 @@ textarea, input[type="email"], input[type="number"], input[type="password"], inp
   background: #1694CA;
   color: #fff;
   text-align: center;
-  padding: 1rem; }
+  padding: 0rem 1rem 2rem 1rem; }
   #header a {
     display: inline-block; }
   #header #logo-svg {
