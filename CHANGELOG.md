@@ -1,3 +1,9 @@
+# v1.2.1
+## 10/16/2018
+
+1. [](#bugfix)
+    * Restored CSS styling for display of site title
+
 # v1.2.0
 ## 10/16/2018
 
