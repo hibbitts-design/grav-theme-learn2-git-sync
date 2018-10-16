@@ -19,10 +19,25 @@ form:
 
         options:
           fields:
-            header.taxonomy.category:
-              type: hidden
-              label: Default Taxonomy Category
-              data-default@: '\Grav\Theme\Learn2GitSync::getdefaulttaxonomycategory'
+            taxonomies:
+              fields:
+                header.taxonomy:
+                  unset@: true
+
+                header.taxonomy.category:
+                  type: selectize
+                  label: Category
+                  classes: fancy
+                  data-default@: '\Grav\Theme\Learn2GitSync::getdefaulttaxonomycategory'
+                  validate:
+                    type: commalist
+
+                header.taxonomy.tag:
+                  type: selectize
+                  label: Tag
+                  classes: fancy
+                  validate:
+                    type: commalist
 
         advanced:
           fields:
