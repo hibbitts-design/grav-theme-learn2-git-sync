@@ -1,3 +1,9 @@
+# v1.2.2
+## 10/17/2018
+
+1. [](#improved)
+    * Updated ReadMe, theme description and screenshots
+
 # v1.2.1
 ## 10/16/2018
 
