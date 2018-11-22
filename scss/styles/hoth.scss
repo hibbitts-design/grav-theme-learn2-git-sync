@@ -4,7 +4,7 @@
 $theme-main: #CAD1D9;
 $theme-secondary: #383F45;
 $theme-main-alt: #FAFAFA;
-$theme-secondary-alt: #383F45;
+$theme-secondary-alt: darken($theme-secondary, 5%);
 $theme-text: #383F45;
 $theme-text-alt: #2c2d30;
 $theme-background: #FAFAFA;
@@ -16,17 +16,15 @@ $core-accent: $theme-secondary;
 $secondary-link: darken($core-accent, 15%);
 
 $header-height: 0;
-$header-bg: $theme-main;
+$header-bg: darken(desaturate(adjust-hue($theme-main, -2), 11.90), 24.90);
 $sidebar-width: 300px;
 $sidebar-width-smaller: 230px;
 $sidebar-bg: $theme-secondary-alt;
 $sidebar-text: darken($theme-background, 5%);
 $sidebar-link: $theme-background;
 $navbar-text: desaturate($core-accent,50%);
-$navbar-bg: $theme-background;
-$progress-bar: #50D681;
+$navbar-bg: $theme-secondary-alt;
 $check-color: lighten($sidebar-bg, 30%);
-$star-color: #F8C74A;
 
 // Font Weights
 $font-weight-bold: 600;

@@ -15,6 +15,136 @@
   .button:active, .button-secondary:active {
     margin: 2px 0 -2px 0; }
 
+/*
+  The Ultimate Hover Color Function
+  @author Gray Gilmore - http://code.graygilmore.com
+
+  The goal of this Sass function is provide a hover color that works
+  with any color on any background. No longer do we need to bundle
+  hover color options with our themes, let Sassy McSasserson take care
+  of that for you.
+
+  The hover color, seen in this demo as "After" text, must be visible in
+  all situations and, hopefully, pass the WCAG 2.0 contrast ratio [1]
+  formula (4.5:1).
+
+  [1] http://www.w3.org/TR/2008/REC-WCAG20-20081211/#visual-audio-contrast-contrast
+
+  contrast-ratio() help from @davidkaneda
+
+
+  ## Usage ##
+
+  a {
+    color: $link-color;
+    
+    &:hover {
+      color: hover($background-color, $link-color);
+    }
+  }
+
+  button {
+    background: $button-background;
+    color: $button-color;
+
+    &:hover {
+      background: hover($background-color, $button-background);
+    }
+  }
+
+  ## End Usage ##
+
+*/
+/**
+ * Calculate the luminance for a color.
+ * See https://www.w3.org/TR/WCAG20-TECHS/G17.html#G17-tests
+ */
+/**
+ * Calculate the contrast ratio between two colors.
+ * See https://www.w3.org/TR/WCAG20-TECHS/G17.html#G17-tests
+ */
+/**
+ * Determine whether to use dark or light text on top of given color.
+ * Returns black for dark text and white for light text.
+ */
+/*
+  WCAG color contrast formula
+  https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/G18#G18-procedure
+
+  @see https://codepen.io/giana/project/full/ZWbGzD
+
+  This pen uses the non-standard Sass pow() function
+  https://css-tricks.com/snippets/sass/power-function/
+  Using it outside of CodePen requires you provide your own pow() function with support for decimals
+
+  To generate random colors, we're also using a two-variable random() function includded with compass.
+*/
+.ratio::after {
+  content: "1"; }
+
+.balance::after {
+  content: "96"; }
+
+.color-block .color1 {
+  background: #e6e0e2;
+  color: #000; }
+  .color-block .color1::after {
+    content: "#e6e0e2"; }
+
+.color-block .color2 {
+  background: #ffeae1;
+  color: #000; }
+  .color-block .color2::after {
+    content: "#ffeae1"; }
+
+.fix-color .color:nth-child(2) {
+  background: #e6e0e2;
+  color: #000; }
+  .fix-color .color:nth-child(2)::after {
+    content: "#e6e0e2"; }
+
+.fix-color .color:nth-child(3) {
+  background: #ffeae1;
+  color: #000; }
+  .fix-color .color:nth-child(3)::after {
+    content: "#ffeae1"; }
+
+.fix-contrast .color:nth-child(2) {
+  background: #e6e0e2;
+  color: #000; }
+  .fix-contrast .color:nth-child(2)::after {
+    content: "#e6e0e2"; }
+
+.fix-contrast .color:nth-child(3) {
+  background: #ffeae1;
+  color: #000; }
+  .fix-contrast .color:nth-child(3)::after {
+    content: "#ffeae1"; }
+
+.best-contrast .color:nth-child(2) {
+  background: #612937;
+  color: #fff; }
+  .best-contrast .color:nth-child(2)::after {
+    content: "#612937"; }
+
+.best-contrast .color:nth-child(3) {
+  background: #612937;
+  color: #fff; }
+  .best-contrast .color:nth-child(3)::after {
+    content: "#612937"; }
+
+.scale-luminance .color:nth-child(2) {
+  background: #f3edef;
+  color: #000; }
+  .scale-luminance .color:nth-child(2)::after {
+    content: "#f3edef"; }
+
+.check-contrast .result::after {
+  content: "true"; }
+
+.luminance .result::after {
+  content: "0.75584, 0.85587"; }
+
 body #sidebar ul li.active > a {
   color: #2B303B !important; }
 
@@ -25,13 +155,17 @@ body {
   -moz-osx-font-smoothing: grayscale; }
 
 a {
-  color: #C0C5CE; }
-  a:hover {
-    color: #959dad; }
+  color: #b5bcc9; }
+  a:link, a:visited {
+    color: #b5bcc9; }
+  a:hover, a:active {
+    color: #c4c9d4; }
 
-#body-inner a:hover {
+#body-inner a {
   text-decoration: underline;
   text-decoration-style: dotted; }
+  #body-inner a:hover {
+    text-decoration-style: solid; }
 
 pre {
   position: relative; }
@@ -40,7 +174,10 @@ pre {
   background: #fff;
   border: 1px solid #eaeaea; }
 
-b, strong, label, th {
+b,
+strong,
+label,
+th {
   font-weight: 600; }
 
 .default-animation, #header #logo-svg, #header #logo-svg path, #sidebar, #sidebar ul, #body, #body .padding, #body .nav {
@@ -63,7 +200,7 @@ textarea, input[type="email"], input[type="number"], input[type="password"], inp
 
 #header {
   background: #96B5B4;
-  color: #fff;
+  color: #eaf0f0;
   text-align: center;
   padding: 1rem; }
   #header a {
@@ -77,8 +214,8 @@ textarea, input[type="email"], input[type="number"], input[type="password"], inp
 .searchbox {
   margin-top: 0.5rem;
   position: relative;
-  border: 1px solid #a5c0bf;
-  background: #87aaa9;
+  border: 1px solid #87aaa9;
+  background: #a5c0bf;
   border-radius: 4px; }
   .searchbox label {
     color: rgba(255, 255, 255, 0.8);
@@ -95,7 +232,7 @@ textarea, input[type="email"], input[type="number"], input[type="password"], inp
       color: rgba(255, 255, 255, 0.9); }
   .searchbox input {
     display: inline-block;
-    color: #fff;
+    color: #edf2f2;
     width: 100%;
     height: 30px;
     background: transparent;
@@ -104,13 +241,13 @@ textarea, input[type="email"], input[type="number"], input[type="password"], inp
     margin: 0;
     font-weight: 400; }
     .searchbox input::-webkit-input-placeholder {
-      color: rgba(255, 255, 255, 0.6); }
+      color: #e7eeee; }
     .searchbox input::-moz-placeholder {
-      color: rgba(255, 255, 255, 0.6); }
+      color: #e7eeee; }
     .searchbox input:-moz-placeholder {
-      color: rgba(255, 255, 255, 0.6); }
+      color: #e7eeee; }
     .searchbox input:-ms-input-placeholder {
-      color: rgba(255, 255, 255, 0.6); }
+      color: #e7eeee; }
 
 #sidebar-toggle {
   display: none; }
@@ -126,12 +263,16 @@ textarea, input[type="email"], input[type="number"], input[type="password"], inp
   bottom: 0;
   left: 0;
   font-weight: 500;
-  font-size: 15px; }
-  #sidebar a {
+  font-size: 15px;
+  border-right: 1px solid #3a4150; }
+  #sidebar a,
+  #sidebar i {
     color: #f0f2f4; }
-    #sidebar a:hover, #sidebar a.button {
-      color: white; }
-    #sidebar a.subtitle {
+    #sidebar a:hover,
+    #sidebar i:hover {
+      color: #c4c9d4; }
+    #sidebar a.subtitle,
+    #sidebar i.subtitle {
       color: rgba(240, 242, 244, 0.6); }
   #sidebar hr {
     border-bottom: 1px solid #252932; }
@@ -171,7 +312,7 @@ textarea, input[type="email"], input[type="number"], input[type="password"], inp
     padding: 0;
     margin: 0; }
     #sidebar ul.searched a {
-      color: #b5bcc9; }
+      color: white; }
     #sidebar ul.searched .search-match a {
       color: white; }
       #sidebar ul.searched .search-match a:hover {
@@ -191,7 +332,7 @@ textarea, input[type="email"], input[type="number"], input[type="password"], inp
         line-height: 2rem;
         font-size: 1.1rem; }
         #sidebar ul.topics > li > a b {
-          opacity: 0.5;
+          color: #f0f2f4;
           font-weight: normal; }
         #sidebar ul.topics > li > a .fa {
           margin-top: 9px; }
@@ -201,6 +342,8 @@ textarea, input[type="email"], input[type="number"], input[type="password"], inp
         margin-right: -1rem;
         padding-left: 1rem;
         padding-right: 1rem; }
+        #sidebar ul.topics > li.parent > a b, #sidebar ul.topics > li.active > a b {
+          color: #f0f2f4; }
     #sidebar ul li.active > a {
       background: #fff;
       color: #f0f2f4 !important;
@@ -208,6 +351,8 @@ textarea, input[type="email"], input[type="number"], input[type="password"], inp
       margin-right: -1rem;
       padding-left: 1rem;
       padding-right: 1rem; }
+      #sidebar ul li.active > a b {
+        color: #f0f2f4 !important; }
     #sidebar ul li {
       padding: 0; }
       #sidebar ul li.visited + span {
@@ -235,6 +380,11 @@ textarea, input[type="email"], input[type="number"], input[type="password"], inp
       #sidebar ul li li {
         padding-left: 1rem;
         text-indent: 0.2rem; }
+
+#body #navigation .nav .fa {
+  color: black; }
+  #body #navigation .nav .fa:active, #body #navigation .nav .fa:focus, #body #navigation .nav .fa:hover, #body #navigation .nav .fa:visited {
+    color: black; }
 
 #main {
   background: #f7f7f7;
@@ -278,7 +428,7 @@ textarea, input[type="email"], input[type="number"], input[type="password"], inp
     top: 0;
     bottom: 0;
     width: 4rem;
-    font-size: 50px;
+    font-size: 0;
     height: 100%;
     cursor: pointer;
     display: table;
@@ -299,6 +449,8 @@ textarea, input[type="email"], input[type="number"], input[type="password"], inp
         padding-top: 0; }
         #body .nav > i {
           display: inline-block; } }
+    #body .nav i {
+      font-size: 50px; }
     #body .nav:hover {
       background: #2B303B; }
     #body .nav.nav-pref {
@@ -362,11 +514,11 @@ blockquote {
   border-left: 10px solid #F0F2F4; }
   blockquote p {
     font-size: 1.1rem;
-    color: #999; }
+    color: #cccccc; }
   blockquote cite {
     display: block;
     text-align: right;
-    color: #666;
+    color: #999999;
     font-size: 1.2rem; }
 
 blockquote {
@@ -488,26 +640,30 @@ td {
   border: 1px solid #eaeaea; }
 
 .button {
-  background: #C0C5CE;
-  color: #fff;
-  box-shadow: 0 3px 0 #afb5c1; }
+  background: #C0C5CE !important;
+  color: black !important;
+  box-shadow: 0 3px 0 #d1d5db !important; }
   .button:hover {
-    background: #afb5c1;
-    box-shadow: 0 3px 0 #9ea5b3;
-    color: #fff; }
+    background: #d1d5db !important;
+    box-shadow: 0 3px 0 #e2e5e9 !important;
+    color: black !important; }
   .button:active {
-    box-shadow: 0 1px 0 #9ea5b3; }
+    box-shadow: 0 1px 0 #e2e5e9 !important; }
+  .button i {
+    color: black !important; }
 
 .button-secondary {
-  background: #959dad;
-  color: #fff;
-  box-shadow: 0 3px 0 #848e9f; }
+  background: #959dad !important;
+  color: black !important;
+  box-shadow: 0 3px 0 #a6adba !important; }
   .button-secondary:hover {
-    background: #848e9f;
-    box-shadow: 0 3px 0 #737e92;
-    color: #fff; }
+    background: #a6adba !important;
+    box-shadow: 0 3px 0 #b7bdc7 !important;
+    color: black !important; }
   .button-secondary:active {
-    box-shadow: 0 1px 0 #737e92; }
+    box-shadow: 0 1px 0 #b7bdc7 !important; }
+  .button-secondary i {
+    color: black !important; }
 
 .bullets {
   margin: 1.7rem 0;
@@ -875,7 +1031,12 @@ td {
   margin: 0rem -1rem 2rem;
   padding: 0 1rem;
   height: 0;
-  min-height: 3rem; }
+  min-height: 3rem;
+  color: #cccccc; }
+  #top-bar a {
+    color: #e6e6e6; }
+    #top-bar a:hover {
+      color: #f2f2f2; }
 
 #top-github-link {
   position: relative;

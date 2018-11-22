@@ -17,12 +17,13 @@
     left: 0;
     font-weight: $font-weight-medium;
     font-size: 15px;
+    border-right: 1px solid diminish($sidebar-bg, 7%);
 
-    a {
+    a,
+    i {
         color: $sidebar-link;
-        &:hover,
-        &.button {
-            color: lighten($sidebar-link, 100%);
+        &:hover {
+            color: amplify(contrast-color($sidebar-bg, $sidebar-link), 5%);
         }
         &.subtitle {
             color: rgba($sidebar-link, 0.6);
@@ -30,7 +31,7 @@
     }
 
     hr {
-        border-bottom: 1px solid darken($sidebar-bg, 3%);
+        border-bottom: 1px solid amplify($sidebar-bg, 3%);
     }
 
     a.padding {
@@ -60,8 +61,8 @@
 
         &.parent {
             a {
-                background: darken($sidebar-bg, 7%);
-                color: lighten($sidebar-link, 5%) !important;
+                background: amplify($sidebar-bg, 7%);
+                color: amplify($sidebar-link, 5%) !important;
             }
         }
 
@@ -99,14 +100,14 @@
 
         &.searched {
             a {
-                color: darken($sidebar-link, 20%);
+                color: amplify($sidebar-link, 20%);
             }
 
             .search-match {
                 a {
-                    color: lighten($sidebar-link, 10%);
+                    color: amplify($sidebar-link, 10%);
                     &:hover {
-                        color: lighten($sidebar-link, 20%);
+                        color: amplify($sidebar-link, 20%);
                     }
                 }
             }
@@ -140,7 +141,7 @@
                     font-size: 1.1rem;
 
                     b {
-                        opacity: 0.5;
+                        color: $sidebar-link;
                         font-weight: normal;
                     }
 
@@ -150,11 +151,16 @@
                 }
 
                 &.parent, &.active {
-                    background: darken($sidebar-bg, 5%);
+                    background: amplify($sidebar-bg, 5%);
                     margin-left: -1rem;
                     margin-right: -1rem;
                     padding-left: 1rem;
                     padding-right: 1rem;
+                    > a {
+                        b {
+                            color: $sidebar-link;
+                        }
+                    }
                 }
             }
         }
@@ -166,6 +172,9 @@
             margin-right: -1rem;
             padding-left: 1rem;
             padding-right: 1rem;
+            b {
+                color: $core-text !important;
+            }
         }
 
         li {
@@ -209,5 +218,20 @@
             }
         }
 
+    }
+}
+#body {
+    #navigation {
+        .nav {
+            .fa {
+                color: amplify(contrast-color($page-bg, $sidebar-bg), 15%);
+                &:active,
+                &:focus,
+                &:hover,
+                &:visited {
+                    color: contrast-color($page-bg, $sidebar-bg);
+                }
+            }
+        }
     }
 }

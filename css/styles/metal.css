@@ -15,6 +15,136 @@
   .button:active, .button-secondary:active {
     margin: 2px 0 -2px 0; }
 
+/*
+  The Ultimate Hover Color Function
+  @author Gray Gilmore - http://code.graygilmore.com
+
+  The goal of this Sass function is provide a hover color that works
+  with any color on any background. No longer do we need to bundle
+  hover color options with our themes, let Sassy McSasserson take care
+  of that for you.
+
+  The hover color, seen in this demo as "After" text, must be visible in
+  all situations and, hopefully, pass the WCAG 2.0 contrast ratio [1]
+  formula (4.5:1).
+
+  [1] http://www.w3.org/TR/2008/REC-WCAG20-20081211/#visual-audio-contrast-contrast
+
+  contrast-ratio() help from @davidkaneda
+
+
+  ## Usage ##
+
+  a {
+    color: $link-color;
+    
+    &:hover {
+      color: hover($background-color, $link-color);
+    }
+  }
+
+  button {
+    background: $button-background;
+    color: $button-color;
+
+    &:hover {
+      background: hover($background-color, $button-background);
+    }
+  }
+
+  ## End Usage ##
+
+*/
+/**
+ * Calculate the luminance for a color.
+ * See https://www.w3.org/TR/WCAG20-TECHS/G17.html#G17-tests
+ */
+/**
+ * Calculate the contrast ratio between two colors.
+ * See https://www.w3.org/TR/WCAG20-TECHS/G17.html#G17-tests
+ */
+/**
+ * Determine whether to use dark or light text on top of given color.
+ * Returns black for dark text and white for light text.
+ */
+/*
+  WCAG color contrast formula
+  https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/G18#G18-procedure
+
+  @see https://codepen.io/giana/project/full/ZWbGzD
+
+  This pen uses the non-standard Sass pow() function
+  https://css-tricks.com/snippets/sass/power-function/
+  Using it outside of CodePen requires you provide your own pow() function with support for decimals
+
+  To generate random colors, we're also using a two-variable random() function includded with compass.
+*/
+.ratio::after {
+  content: "13"; }
+
+.balance::after {
+  content: "33"; }
+
+.color-block .color1 {
+  background: #070d0e;
+  color: #fff; }
+  .color-block .color1::after {
+    content: "#070d0e"; }
+
+.color-block .color2 {
+  background: #64646e;
+  color: #fff; }
+  .color-block .color2::after {
+    content: "#64646e"; }
+
+.fix-color .color:nth-child(2) {
+  background: #000;
+  color: #fff; }
+  .fix-color .color:nth-child(2)::after {
+    content: "#000"; }
+
+.fix-color .color:nth-child(3) {
+  background: #d6d5e9;
+  color: #000; }
+  .fix-color .color:nth-child(3)::after {
+    content: "#d6d5e9"; }
+
+.fix-contrast .color:nth-child(2) {
+  background: #050909;
+  color: #fff; }
+  .fix-contrast .color:nth-child(2)::after {
+    content: "#050909"; }
+
+.fix-contrast .color:nth-child(3) {
+  background: #cfcfe1;
+  color: #000; }
+  .fix-contrast .color:nth-child(3)::after {
+    content: "#cfcfe1"; }
+
+.best-contrast .color:nth-child(2) {
+  background: #07120e;
+  color: #fff; }
+  .best-contrast .color:nth-child(2)::after {
+    content: "#07120e"; }
+
+.best-contrast .color:nth-child(3) {
+  background: #8ffff6;
+  color: #000; }
+  .best-contrast .color:nth-child(3)::after {
+    content: "#8ffff6"; }
+
+.scale-luminance .color:nth-child(2) {
+  background: #527272;
+  color: #fff; }
+  .scale-luminance .color:nth-child(2)::after {
+    content: "#527272"; }
+
+.check-contrast .result::after {
+  content: "false"; }
+
+.luminance .result::after {
+  content: "0.00592, 0.13006"; }
+
 body {
   background: #ffffff;
   color: #000000;
@@ -22,13 +152,17 @@ body {
   -moz-osx-font-smoothing: grayscale; }
 
 a {
-  color: #b47d6c; }
-  a:hover {
-    color: #8c5847; }
+  color: black; }
+  a:link, a:visited {
+    color: black; }
+  a:hover, a:active {
+    color: black; }
 
-#body-inner a:hover {
+#body-inner a {
   text-decoration: underline;
   text-decoration-style: dotted; }
+  #body-inner a:hover {
+    text-decoration-style: solid; }
 
 pre {
   position: relative; }
@@ -60,7 +194,7 @@ textarea, input[type="email"], input[type="number"], input[type="password"], inp
 
 #header {
   background: #bd8c7d;
-  color: #fff;
+  color: #f2e8e5;
   text-align: center;
   padding: 1rem; }
   #header a {
@@ -74,8 +208,8 @@ textarea, input[type="email"], input[type="number"], input[type="password"], inp
 .searchbox {
   margin-top: 0.5rem;
   position: relative;
-  border: 1px solid #c69b8e;
-  background: #b47d6c;
+  border: 1px solid #b47d6c;
+  background: #c69b8e;
   border-radius: 4px; }
   .searchbox label {
     color: rgba(255, 255, 255, 0.8);
@@ -92,7 +226,7 @@ textarea, input[type="email"], input[type="number"], input[type="password"], inp
       color: rgba(255, 255, 255, 0.9); }
   .searchbox input {
     display: inline-block;
-    color: #fff;
+    color: #f4ebe8;
     width: 100%;
     height: 30px;
     background: transparent;
@@ -101,13 +235,13 @@ textarea, input[type="email"], input[type="number"], input[type="password"], inp
     margin: 0;
     font-weight: 400; }
     .searchbox input::-webkit-input-placeholder {
-      color: rgba(255, 255, 255, 0.6); }
+      color: #f0e5e2; }
     .searchbox input::-moz-placeholder {
-      color: rgba(255, 255, 255, 0.6); }
+      color: #f0e5e2; }
     .searchbox input:-moz-placeholder {
-      color: rgba(255, 255, 255, 0.6); }
+      color: #f0e5e2; }
     .searchbox input:-ms-input-placeholder {
-      color: rgba(255, 255, 255, 0.6); }
+      color: #f0e5e2; }
 
 #sidebar-toggle {
   display: none; }
@@ -123,12 +257,16 @@ textarea, input[type="email"], input[type="number"], input[type="password"], inp
   bottom: 0;
   left: 0;
   font-weight: 500;
-  font-size: 15px; }
-  #sidebar a {
+  font-size: 15px;
+  border-right: 1px solid #5b5b5d; }
+  #sidebar a,
+  #sidebar i {
     color: #e8e8e6; }
-    #sidebar a:hover, #sidebar a.button {
-      color: white; }
-    #sidebar a.subtitle {
+    #sidebar a:hover,
+    #sidebar i:hover {
+      color: #c3c3be; }
+    #sidebar a.subtitle,
+    #sidebar i.subtitle {
       color: rgba(232, 232, 230, 0.6); }
   #sidebar hr {
     border-bottom: 1px solid #414143; }
@@ -168,7 +306,7 @@ textarea, input[type="email"], input[type="number"], input[type="password"], inp
     padding: 0;
     margin: 0; }
     #sidebar ul.searched a {
-      color: #b7b7b1; }
+      color: white; }
     #sidebar ul.searched .search-match a {
       color: white; }
       #sidebar ul.searched .search-match a:hover {
@@ -188,7 +326,7 @@ textarea, input[type="email"], input[type="number"], input[type="password"], inp
         line-height: 2rem;
         font-size: 1.1rem; }
         #sidebar ul.topics > li > a b {
-          opacity: 0.5;
+          color: #e8e8e6;
           font-weight: normal; }
         #sidebar ul.topics > li > a .fa {
           margin-top: 9px; }
@@ -198,6 +336,8 @@ textarea, input[type="email"], input[type="number"], input[type="password"], inp
         margin-right: -1rem;
         padding-left: 1rem;
         padding-right: 1rem; }
+        #sidebar ul.topics > li.parent > a b, #sidebar ul.topics > li.active > a b {
+          color: #e8e8e6; }
     #sidebar ul li.active > a {
       background: #fff;
       color: #000000 !important;
@@ -205,6 +345,8 @@ textarea, input[type="email"], input[type="number"], input[type="password"], inp
       margin-right: -1rem;
       padding-left: 1rem;
       padding-right: 1rem; }
+      #sidebar ul li.active > a b {
+        color: #000000 !important; }
     #sidebar ul li {
       padding: 0; }
       #sidebar ul li.visited + span {
@@ -232,6 +374,11 @@ textarea, input[type="email"], input[type="number"], input[type="password"], inp
       #sidebar ul li li {
         padding-left: 1rem;
         text-indent: 0.2rem; }
+
+#body #navigation .nav .fa {
+  color: black; }
+  #body #navigation .nav .fa:active, #body #navigation .nav .fa:focus, #body #navigation .nav .fa:hover, #body #navigation .nav .fa:visited {
+    color: #171717; }
 
 #main {
   background: #f7f7f7;
@@ -275,7 +422,7 @@ textarea, input[type="email"], input[type="number"], input[type="password"], inp
     top: 0;
     bottom: 0;
     width: 4rem;
-    font-size: 50px;
+    font-size: 0;
     height: 100%;
     cursor: pointer;
     display: table;
@@ -296,6 +443,8 @@ textarea, input[type="email"], input[type="number"], input[type="password"], inp
         padding-top: 0; }
         #body .nav > i {
           display: inline-block; } }
+    #body .nav i {
+      font-size: 50px; }
     #body .nav:hover {
       background: #e8e8e6; }
     #body .nav.nav-pref {
@@ -359,11 +508,11 @@ blockquote {
   border-left: 10px solid #F0F2F4; }
   blockquote p {
     font-size: 1.1rem;
-    color: #999; }
+    color: #666666; }
   blockquote cite {
     display: block;
     text-align: right;
-    color: #666;
+    color: #333333;
     font-size: 1.2rem; }
 
 blockquote {
@@ -485,26 +634,30 @@ td {
   border: 1px solid #eaeaea; }
 
 .button {
-  background: #b47d6c;
-  color: #fff;
-  box-shadow: 0 3px 0 #aa6b58; }
+  background: #b47d6c !important;
+  color: black !important;
+  box-shadow: 0 3px 0 #be8f80 !important; }
   .button:hover {
-    background: #aa6b58;
-    box-shadow: 0 3px 0 #965e4d;
-    color: #fff; }
+    background: #be8f80 !important;
+    box-shadow: 0 3px 0 #c9a195 !important;
+    color: black !important; }
   .button:active {
-    box-shadow: 0 1px 0 #965e4d; }
+    box-shadow: 0 1px 0 #c9a195 !important; }
+  .button i {
+    color: black !important; }
 
 .button-secondary {
-  background: #8c5847;
-  color: #fff;
-  box-shadow: 0 3px 0 #784b3d; }
+  background: #8c5847 !important;
+  color: white !important;
+  box-shadow: 0 3px 0 #784b3d !important; }
   .button-secondary:hover {
-    background: #784b3d;
-    box-shadow: 0 3px 0 #643e33;
-    color: #fff; }
+    background: #784b3d !important;
+    box-shadow: 0 3px 0 #643e33 !important;
+    color: white !important; }
   .button-secondary:active {
-    box-shadow: 0 1px 0 #643e33; }
+    box-shadow: 0 1px 0 #643e33 !important; }
+  .button-secondary i {
+    color: white !important; }
 
 .bullets {
   margin: 1.7rem 0;
@@ -879,13 +1032,18 @@ td {
   z-index: 1;
   float: right;
   display: block; }
+  #top-github-link a {
+    color: #0d0d0d; }
+    #top-github-link a:hover {
+      color: black; }
 
 #body #breadcrumbs {
   height: auto;
   display: block;
   margin-bottom: 0;
   padding-left: 0;
-  line-height: 1.4; }
+  line-height: 1.4;
+  color: black; }
   #body #breadcrumbs span {
     padding: 0 0.1rem; }
 

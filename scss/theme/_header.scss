@@ -1,6 +1,6 @@
 #header {
     background: $header-bg;
-    color: $white;
+    color: contrast-color($header-bg, $white);
     text-align: center;
 
     padding: 1rem;
@@ -25,8 +25,8 @@
     margin-top: 0.5rem;
     position: relative;
 
-    border: 1px solid lighten($header-bg, 5%);
-    background: darken($header-bg,5%);
+    border: 1px solid diminish($header-bg, 5%);
+    background: amplify($header-bg, 5%);
     border-radius: 4px;
 
     label {
@@ -50,7 +50,7 @@
 
     input {
         display: inline-block;
-        color: $white;
+        color: contrast-color(amplify($header-bg, 5%), $white);
         width: 100%;
         height: 30px;
         background: transparent;
@@ -60,7 +60,7 @@
         font-weight: $font-weight-regular;
 
         @include placeholder {
-            color: rgba($white, 0.6);
+            color: contrast-color(diminish($header-bg, 5%), $white);
         }
     }
 }
