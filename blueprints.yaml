@@ -85,6 +85,7 @@ form:
       options:
         default: Default
         hoth: Hoth
+        spitsbergen: Spitsbergen (Hoth v2)
 
     top_level_version:
         type: toggle
