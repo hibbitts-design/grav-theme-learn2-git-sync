@@ -63,7 +63,7 @@
         top: 0;
         bottom: 0;
         width: $body-margin;
-        font-size: 50px;
+        font-size: 0;
         height: 100%;
         cursor: pointer;
         display: table;
@@ -88,6 +88,9 @@
             }
         }
 
+        i {
+            font-size: 50px;
+        }
 
         &:hover {
             background: $navbar-bg;

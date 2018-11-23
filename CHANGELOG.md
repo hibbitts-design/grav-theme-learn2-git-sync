@@ -1,3 +1,9 @@
+# v1.2.3
+## XX/XX/2018
+
+1. [](#new)
+    * Added custom styles 'Spitsbergen' and 'Longyearbyen' (thanks @olevik)
+
 # v1.2.2
 ## 10/17/2018
 
