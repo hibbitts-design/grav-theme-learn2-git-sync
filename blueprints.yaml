@@ -1,5 +1,6 @@
 name: Learn2 Git Sync
-version: 1.2.3
+version: 1.3.0-beta.1
+testing: true
 description: "A customized version of the Learn2 theme for use with the Learn2 with Git Sync skeleton package. Includes selectable visual styles."
 icon: git
 author:
@@ -13,6 +14,7 @@ bugs: https://github.com/hibbitts-design/grav-theme-learn2-git-sync/issues
 license: MIT
 
 dependencies:
+  - { name: grav, version: '>=1.6.0-rc.3' }
   - admin
   - breadcrumbs
   - learn2
@@ -21,8 +23,10 @@ dependencies:
   - feed
   - git-sync
   - highlight
+  - langswitcher
   - problems
   - simplesearch
+  - shortcode-core
   - tntsearch
   - youtube
 
@@ -64,6 +68,18 @@ form:
       type: section
       title: 'Learn 2 Theme Options'
       underline: true
+
+    enable_doc_versioning:
+        type: toggle
+        label: 'Document Versioning'
+        description: Support display of version specific docs using the multi-language feature.
+        highlight: 1
+        default: 0
+        options:
+            1: 'Yes'
+            0: 'No'
+        validate:
+            type: bool
 
     hide_site_title:
         type: toggle

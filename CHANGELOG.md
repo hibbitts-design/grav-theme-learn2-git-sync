@@ -1,3 +1,10 @@
+# v1.3.0-beta.1
+## 03/02/2019
+
+1. [](#new)
+    * Added initial support for document versioning using Grav's multi-language feature (thanks @rhuk)
+    * Added 'version' alias to 'language' shortcode, for example `[version=20]...[/version]` (thanks @rhuk)
+
 # v1.2.3
 ## 11/23/2018
 
