@@ -1161,4 +1161,14 @@ td {
   -moz-transform-style: preserve-3d;
   transform-style: preserve-3d; }
 
+.version-chooser select {
+  display: inline-block!important;
+  color: #000000;
+  background-color: #FFFFFF!;
+  border: 1px solid #666666;
+  font-size: 15px;
+  font-weight: regular;
+  margin: 0;
+}
+
 /*# sourceMappingURL=spitsbergen.css.map */
