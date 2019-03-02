@@ -3,24 +3,31 @@ namespace Grav\Theme;
 
 use Grav\Common\Grav;
 use Grav\Common\Theme;
+use RocketTheme\Toolbox\Event\Event;
 
 class Learn2GitSync extends Learn2
 {
     /**
      * Initialize plugin and subsequent events
-     * 
+     *
      * @return array
      */
     public static function getSubscribedEvents()
     {
         return [
+            'onTwigInitialized' => ['onTwigInitialized', 0],
             'onThemeInitialized' => ['onThemeInitialized', 0]
         ];
     }
 
+    public function onTwigInitialized() {
+        $sc = $this->grav['shortcode'];
+        $sc->getHandlers()->addAlias('version', 'lang');
+    }
+
     /**
      * Register events and route with Grav
-     * 
+     *
      * @return void
      */
     public function onThemeInitialized()
@@ -37,7 +44,7 @@ class Learn2GitSync extends Learn2
 
     /**
      * Get default category setting
-     * 
+     *
      * @return string
      */
     public static function getdefaulttaxonomycategory()
@@ -48,7 +55,7 @@ class Learn2GitSync extends Learn2
 
     /**
      * Handle CSS
-     * 
+     *
      * @return void
      */
     public function onPageInitialized()
@@ -76,7 +83,7 @@ class Learn2GitSync extends Learn2
      * @param string $file         Filename.
      * @param string $ext          File extension.
      * @param array  ...$locations List of paths.
-     * 
+     *
      * @return string
      */
     public static function fileFinder($file, $ext, ...$locations)
