@@ -1,3 +1,9 @@
+# v1.3.0-beta.2
+## 03/02/2019
+
+1. [](#improved)
+    * Improved appearance of versions dropdown menu with custom themes
+
 # v1.3.0-beta.1
 ## 03/02/2019
 
