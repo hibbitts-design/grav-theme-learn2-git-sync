@@ -1172,7 +1172,7 @@ td {
   transform-style: preserve-3d; }
 
 .version-chooser select {
-  display: inline-block!important;
+  display: inline-block;
   color: #000000;
   background-color: #FFFFFF;
   border: 1px solid #666666;
