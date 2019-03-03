@@ -1,3 +1,9 @@
+# v1.3.0-beta.3
+## 03/03/2019
+
+1. [](#improved)
+    * Cleaned up CSS for version dropdown in custom themes
+
 # v1.3.0-beta.2
 ## 03/02/2019
 
