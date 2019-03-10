@@ -16,8 +16,20 @@ class Learn2GitSync extends Learn2
     {
         return [
             'onTwigInitialized' => ['onTwigInitialized', 0],
-            'onThemeInitialized' => ['onThemeInitialized', 0]
+            'onThemeInitialized' => ['onThemeInitialized', 0],
+            'onTNTSearchIndex' => ['onTNTSearchIndex', 0]
         ];
+    }
+
+    public function onTNTSearchIndex(Event $e)
+    {
+        $fields = $e['fields'];
+        $page = $e['page'];
+        $taxonomy = $page->taxonomy();
+
+        if (isset($taxonomy['tag'])) {
+            $fields->tag = implode(",", $taxonomy['tag']);
+        }
     }
 
     public function onTwigInitialized() {
