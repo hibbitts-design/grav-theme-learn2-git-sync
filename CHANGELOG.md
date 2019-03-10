@@ -1,28 +1,28 @@
-# v1.3.0-beta.5
+# v1.4.0-beta.5
 ## 03/10/2019
 
 1. [](#new)
     * Added taxonomy 'tag' to default TNTSearch index
 
-# v1.3.0-beta.4
+# v1.4.0-beta.4
 ## 03/07/2019
 
 1. [](#improved)
     * Updated example pages in theme '_demo' folder
 
-# v1.3.0-beta.3
+# v1.4.0-beta.3
 ## 03/03/2019
 
 1. [](#improved)
     * Cleaned up CSS for version dropdown in custom themes
 
-# v1.3.0-beta.2
+# v1.4.0-beta.2
 ## 03/02/2019
 
 1. [](#improved)
     * Improved appearance of versions dropdown menu with custom themes
 
-# v1.3.0-beta.1
+# v1.4.0-beta.1
 ## 03/02/2019
 
 1. [](#new)
