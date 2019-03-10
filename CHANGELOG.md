@@ -1,3 +1,9 @@
+# v1.3.0-beta.5
+## 03/10/2019
+
+1. [](#new)
+    * Added taxonomy 'tag' to default TNTSearch index
+
 # v1.3.0-beta.4
 ## 03/07/2019
 
