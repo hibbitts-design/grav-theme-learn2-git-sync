@@ -1,3 +1,10 @@
+# v1.5.0-beta.2
+## 03/13/2019
+
+1. [](#new)
+    * Added Presentation (which requires Grav 1.6) Plugin as dependency
+    * Updated example pages in theme '_demo' folder to include use of the Presentation Plugin
+
 # v1.5.0-beta.1
 ## 03/10/2019
 
