@@ -1,3 +1,9 @@
+# v1.5.0-beta.3
+## 03/13/2019
+
+1. [](#bugfix)
+    * Added CSS to fix incorrect aspect ratio of embedded Presentations
+
 # v1.5.0-beta.2
 ## 03/13/2019
 
