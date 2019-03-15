@@ -14,8 +14,6 @@ title: Placeholder Slide
 
 ---
 
-[.background-color: #FFFFFF]
-
 ![fit](https://hibbittsdesign.org/images/ux-toolkit-8-no-numbers.png "Diagram of user experience design process/techniques")
 
 ---
@@ -24,9 +22,6 @@ title: Placeholder Slide
 
 ---
 
-[.background-color: #618B25]
-[.build-lists: true]
-
 # Topics to Explore
 1. Topic One  
 2. Topic Two   
@@ -34,35 +29,25 @@ title: Placeholder Slide
 
 ---
 
-[.background-color: #611036]
-
 # Slides Placeholder
 
-### [fa=fa-rocket] Topic One
+### Topic One
 
 ---
 
-[.background-color: #611036]
-
 # Slides Placeholder
 
-### [fa=fa-rocket] Topic Two
+### Topic Two
 
 ---
 
-[.background-color: #611036]
-
 # Slides Placeholder
 
-### [fa=fa-rocket] Topic Three
+### Topic Three
 
 ---
-
-[.background-color: #618B25]
 
 # Summary
 1. Topic One  
 2. Topic Two   
 3. Topic Three  
-
----
