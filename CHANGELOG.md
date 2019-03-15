@@ -1,3 +1,9 @@
+# v1.5.0-beta.4
+## 03/14/2019
+
+1. [](#bugfix)
+    * Updated example pages in theme '_demo' folder
+
 # v1.5.0-beta.3
 ## 03/13/2019
 
