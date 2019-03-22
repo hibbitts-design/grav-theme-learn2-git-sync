@@ -1,5 +1,5 @@
 name: Learn2 Git Sync
-version: 1.3.1
+version: 1.3.2
 description: "A customized version of the Learn2 theme for use with the Learn2 with Git Sync skeleton package. Includes selectable visual styles."
 icon: git
 author:
@@ -13,6 +13,7 @@ bugs: https://github.com/hibbitts-design/grav-theme-learn2-git-sync/issues
 license: MIT
 
 dependencies:
+  - { name: grav, version: '>=1.5.10' }
   - admin
   - breadcrumbs
   - learn2
