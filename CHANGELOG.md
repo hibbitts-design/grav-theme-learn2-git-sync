@@ -1,3 +1,10 @@
+# v1.5.0-beta.6
+## 04/02/2019
+
+1. [](#new)
+    * Twig 2.0 compatibility
+    * Added scripts.html.twig file to hold global JavaScript code
+
 # v1.5.0-beta.5
 ## 03/22/2019
 
