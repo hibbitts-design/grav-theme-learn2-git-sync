@@ -1,65 +1,27 @@
-# v1.5.0-beta.6
+# v1.3.3
 ## 04/02/2019
 
 1. [](#new)
-    * Twig 2.0 compatibility
     * Added scripts.html.twig file to hold global JavaScript code
 
-# v1.5.0-beta.5
+# v1.3.2
 ## 03/22/2019
 
 1. [](#new)
+    * Set Dependency of Grav 1.5.10+ which has support for new **Deferred Block** Twig extension
     * Implement assets rendering using **Deferred Block** Twig extension
 
-# v1.5.0-beta.4
-## 03/14/2019
+# v1.3.1
+## 03/10/2019
 
 1. [](#bugfix)
-    * Updated example pages in theme '_demo' folder
+    * Restored needed 'RocketTheme\Toolbox\Event\Event;' instance
 
-# v1.5.0-beta.3
-## 03/13/2019
-
-1. [](#bugfix)
-    * Added CSS to fix incorrect aspect ratio of embedded Presentations
-
-# v1.5.0-beta.2
-## 03/13/2019
-
-1. [](#new)
-    * Added Presentation (which requires Grav 1.6) Plugin as dependency
-    * Updated example pages in theme '_demo' folder to include use of the Presentation Plugin
-
-# v1.5.0-beta.1
+# v1.3.0
 ## 03/10/2019
 
 1. [](#new)
     * Added taxonomy 'tag' to default TNTSearch index
-
-# v1.3.0-beta.4
-## 03/07/2019
-
-1. [](#improved)
-    * Updated example pages in theme '_demo' folder
-
-# v1.3.0-beta.3
-## 03/03/2019
-
-1. [](#improved)
-    * Cleaned up CSS for version dropdown in custom themes
-
-# v1.3.0-beta.2
-## 03/02/2019
-
-1. [](#improved)
-    * Improved appearance of versions dropdown menu with custom themes
-
-# v1.3.0-beta.1
-## 03/02/2019
-
-1. [](#new)
-    * Added initial support for document versioning using Grav's multi-language feature (thanks @rhuk)
-    * Added 'version' alias to 'language' shortcode, for example `[version=20]...[/version]` (thanks @rhuk)
 
 # v1.2.3
 ## 11/23/2018
