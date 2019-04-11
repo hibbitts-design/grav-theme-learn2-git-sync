@@ -1,3 +1,20 @@
+# v1.5.0
+## 04/11/2019
+
+1. [](#new)
+    * Set Grav dependency to 1.6+
+    * Twig 2.0 compatibility
+    * Added scripts.html.twig file to hold global JavaScript code
+    * Added support for document versioning using Grav's multi-language feature (thanks @rhuk)
+    * Added 'version' alias to 'language' shortcode, for example `[version=20]...[/version]` (thanks @rhuk)
+    * Added taxonomy 'tag' to default TNTSearch index
+    * Added Presentation Plugin as dependency
+    * Added insert Presentation Shortcode button into Editor toolbar
+    * Added example pages in theme '_demo' folder to include use of the Presentation Plugin
+    * Implement assets rendering using **Deferred Block** Twig extension
+1. [](#improved)
+    * Improved appearance of versions dropdown menu with custom themes
+
 # v1.3.3
 ## 04/02/2019
 
