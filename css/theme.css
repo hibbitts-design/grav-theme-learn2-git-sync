@@ -952,4 +952,28 @@ td {
   -moz-transform-style: preserve-3d;
   transform-style: preserve-3d; }
 
+.version-chooser select {
+  display: inline-block;
+  color: #000000;
+  background-color: #FFFFFF;
+  border: 1px solid #666666;
+  font-size: 15px;
+  font-weight: regular;
+  margin: 0;
+}
+
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
 /*# sourceMappingURL=theme.css.map */

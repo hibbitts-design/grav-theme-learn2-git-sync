@@ -15,6 +15,7 @@ class Learn2GitSync extends Learn2
     public static function getSubscribedEvents()
     {
         return [
+            'onTwigInitialized' => ['onTwigInitialized', 0],
             'onThemeInitialized' => ['onThemeInitialized', 0],
             'onTNTSearchIndex' => ['onTNTSearchIndex', 0]
         ];
@@ -25,9 +26,15 @@ class Learn2GitSync extends Learn2
         $fields = $e['fields'];
         $page = $e['page'];
         $taxonomy = $page->taxonomy();
+
         if (isset($taxonomy['tag'])) {
             $fields->tag = implode(",", $taxonomy['tag']);
         }
+    }
+
+    public function onTwigInitialized() {
+        $sc = $this->grav['shortcode'];
+        $sc->getHandlers()->addAlias('version', 'lang');
     }
 
     /**
