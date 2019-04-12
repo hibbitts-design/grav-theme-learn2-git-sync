@@ -1,3 +1,9 @@
+# v1.5.1
+## 04/12/2019
+
+1. [](#new)
+    * Added insert Presentation Shortcode button into Editor toolbar
+
 # v1.5.0
 ## 04/11/2019
 
