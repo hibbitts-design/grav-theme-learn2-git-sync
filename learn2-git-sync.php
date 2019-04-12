@@ -17,8 +17,16 @@ class Learn2GitSync extends Learn2
         return [
             'onTwigInitialized' => ['onTwigInitialized', 0],
             'onThemeInitialized' => ['onThemeInitialized', 0],
+            'onTwigSiteVariables' => ['onTwigSiteVariables', 0],
             'onTNTSearchIndex' => ['onTNTSearchIndex', 0]
         ];
+    }
+
+    public function onTwigSiteVariables()
+    {
+        if ($this->isAdmin() && ($this->grav['config']->get('plugins.shortcode-core.enabled'))) {
+            $this->grav['assets']->add('theme://editor-buttons/admin/js/shortcode-presentation.js');
+        }
     }
 
     public function onTNTSearchIndex(Event $e)
