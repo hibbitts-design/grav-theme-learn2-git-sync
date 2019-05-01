@@ -1,3 +1,9 @@
+# v1.5.2
+## 05/01/2019
+
+1. [](#bugfix)
+    * Added missing images folder with clippy.svg and default favicons
+
 # v1.5.1
 ## 04/12/2019
 
