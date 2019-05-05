@@ -84,3 +84,7 @@ If you want to set Learn2 with Git Sync as the default theme, you can do so by f
 * Clear the Grav cache. The simplest way to do this is by going to the root Grav directory in Terminal and typing `bin/grav clear-cache`.
 
 Once this is done, you should be able to see the new theme on the frontend. Keep in mind any customizations made to the previous theme will not be reflected as all of the theme and templating information is now being pulled from the **learn2-git-sync** folder.
+
+### TNTSearch Configuration
+
+The default search route for the TNTSearch plugin (used for the 'Advanced Search' feature) is set to `/tntsearch`
