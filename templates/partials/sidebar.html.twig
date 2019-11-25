@@ -41,7 +41,7 @@
 <div class="scrollbar-inner">
     <div class="highlightable">
         {% if theme_config.top_level_version %}
-            {% for slug, ver in pages.children %}
+            {% for slug, ver in pages.children.visible %}
                 {{ macro.version(ver) }}
                 <ul id="{{ slug }}" class="topics">
                 {{ macro.loop(ver, '') }}
