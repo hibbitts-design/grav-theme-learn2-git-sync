@@ -1,3 +1,9 @@
+# v1.5.7
+## 11/25/2019
+
+1. [](#improved)
+    * 'Top Level Version' theme option now only displays visible pages (thanks @awrog for reporting this issue)
+
 # v1.5.6
 ## 08/16/2019
 
