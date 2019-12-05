@@ -1,3 +1,9 @@
+# v1.5.8
+## 12/05/2019
+
+1. [](#bugfix)
+    * Do not display the SimpleSearch field when the SimpleSearch plugin is disabled
+
 # v1.5.7
 ## 11/25/2019
 
