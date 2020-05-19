@@ -16,5 +16,5 @@ streams:
      type: ReadOnlyStream
      prefixes:
        '':
-       - user/themes/learn2-git-sync
-       - user/themes/learn2
+       - themes://learn2-git-sync
+       - themes://learn2
