@@ -1,3 +1,9 @@
+# v1.6.0
+## 01/05/2021
+
+1. [](#new)
+    * Initial NextGen Editor support for GoogleSlides, H5P and PDF shortcodes
+
 # v1.5.9
 ## 05/19/2020
 
