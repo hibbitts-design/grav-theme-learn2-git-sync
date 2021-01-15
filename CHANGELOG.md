@@ -1,3 +1,9 @@
+# v1.6.1
+## 01/15/2021
+
+1. [](#new)
+    * GoogleSlides shortcode updated to handle double `_` characters in URL (thanks @GeorgesPapas)
+
 # v1.6.0
 ## 01/05/2021
 
