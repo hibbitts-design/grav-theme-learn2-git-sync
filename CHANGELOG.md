@@ -1,3 +1,9 @@
+# v1.6.3
+## 02/15/2021
+
+1. [](#bugfix)
+    * Removed tab characters from comment indent (thanks @holehan)
+
 # v1.6.2
 ## 01/26/2021
 
