@@ -1,7 +1,7 @@
 name: Learn2 Git Sync
 type: theme
 slug: learn2-git-sync
-version: 1.6.3
+version: 1.6.4
 description: "A customized version of the Learn2 theme for use with the Learn2 with Git Sync skeleton package. Includes selectable visual styles."
 icon: git
 author:
@@ -16,22 +16,18 @@ license: MIT
 
 dependencies:
   - { name: grav, version: '>=1.6.0' }
-  - admin
+  - anchors
   - breadcrumbs
-  - learn2
-  - error
   - external_links
   - feed
   - git-sync
-  - highlight
-  - langswitcher
+  - markdown-notices
   - presentation
   - presentation-deckset
-  - problems
+  - prism-highlight
   - simplesearch
   - shortcode-core
-  - tntsearch
-  - youtube
+  - learn2
 
 form:
   validation: loose
