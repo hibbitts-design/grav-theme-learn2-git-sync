@@ -1,3 +1,9 @@
+# v1.6.6
+## 03/08/2022
+
+1. [](#bugfix)
+    * Fixed getgrav.org link at the bottom of the sidebar (thanks @timinator2020)
+
 # v1.6.5
 ## 03/21/2021
 

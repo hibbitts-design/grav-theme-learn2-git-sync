@@ -1,7 +1,7 @@
 name: Learn2 Git Sync
 type: theme
 slug: learn2-git-sync
-version: 1.6.5
+version: 1.6.6
 description: "A customized version of the Learn2 theme for use with the Learn2 with Git Sync skeleton package. Includes selectable visual styles."
 icon: git
 author:
