@@ -1,15 +1,15 @@
 name: Learn2 Git Sync
 type: theme
 slug: learn2-git-sync
-version: 1.6.7
+version: 1.6.9
 description: "A customized version of the Learn2 theme for use with the Learn2 with Git Sync skeleton package. Includes selectable visual styles."
 icon: git
 author:
- name: Hibbitts Design
+ name: HibbittsDesign.org
  email: hello@hibbittsdesign.org
- url: http://hibbittsdesign.org
+ url: https://hibbittsdesign.org
 homepage: https://github.com/hibbitts-design/grav-theme-learn2-git-sync
-demo: http://demo.hibbittsdesign.org/grav-learn2-git-sync/
+demo: https://demo.hibbittsdesign.org/grav-learn2-git-sync/
 keywords: learn2, gitsync
 bugs: https://github.com/hibbitts-design/grav-theme-learn2-git-sync/issues
 license: MIT
