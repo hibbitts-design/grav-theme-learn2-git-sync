@@ -3,6 +3,7 @@
 
 1. [](#improved)
     * Changed theme author information to HibbittsDesign.org
+    * Updated to support Google Analytics 4 (thanks herobbiedavis)
 
 # v1.6.7
 ## 11/22/2022
