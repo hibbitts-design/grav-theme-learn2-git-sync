@@ -1,5 +1,5 @@
 # v1.6.8
-## XX/XX/2024
+## 12/05/2024
 
 1. [](#improved)
     * Changed theme author information to HibbittsDesign.org
