@@ -1,3 +1,9 @@
+# v1.6.9
+## 04/22/2026
+
+1. [](#bugfix)
+    * Guard against missing shortcode-core plugin in onTwigInitialized
+
 # v1.6.8
 ## 12/05/2024
 
