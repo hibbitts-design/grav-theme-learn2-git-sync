@@ -1,3 +1,9 @@
+# v2.0.0
+## 04/22/2026
+
+1. [](#new)
+    * Added 2026 Refresh style option (Plus Jakarta Sans font, Helios blue accent, slate sidebar); renamed Default style to Classic in Style dropdown
+
 # v1.7.0
 ## 04/22/2026
 
