@@ -59,6 +59,9 @@ class Learn2GitSync extends Learn2
     }
 
     public function onTwigInitialized() {
+        if (!isset($this->grav['shortcode'])) {
+            return;
+        }
         $sc = $this->grav['shortcode'];
         $sc->getHandlers()->addAlias('version', 'lang');
     }
