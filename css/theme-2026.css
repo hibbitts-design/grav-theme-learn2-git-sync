@@ -260,7 +260,7 @@ textarea, input[type="email"], input[type="number"], input[type="password"], inp
         padding: 15px 3rem; } }
     @media only all and (max-width: 47.938em) {
       #body .padding {
-        padding: 5px 1rem; } }
+        padding: 1rem 1.25rem; } }
   #body h1 + hr {
     margin-top: -1.7rem;
     margin-bottom: 3rem; }
@@ -322,6 +322,10 @@ textarea, input[type="email"], input[type="number"], input[type="password"], inp
   #chapter h1 {
     font-size: 5rem;
     border-bottom: 4px solid #F0F2F4; }
+  @media only all and (max-width: 47.938em) {
+    #chapter h1 {
+      font-size: 2.5rem;
+      letter-spacing: -0.02em; } }
   #chapter p {
     text-align: center;
     font-size: 1.2rem; }
