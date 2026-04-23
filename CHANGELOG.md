@@ -1,3 +1,9 @@
+# v2.0.2
+## 04/23/2026
+
+1. [](#bugfix)
+    * Fixed top bar vertical alignment using flexbox
+    
 # v2.0.1
 ## 04/22/2026
 
