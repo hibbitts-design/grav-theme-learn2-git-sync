@@ -1,3 +1,9 @@
+# v2.0.1
+## 04/22/2026
+
+1. [](#new)
+    * Refined 2026 Refresh style: improved mobile typography (chapter heading, body padding) and finalised sky blue colour palette with distinct roles for header, links, and buttons
+
 # v2.0.0
 ## 04/22/2026
 
