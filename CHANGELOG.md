@@ -1,5 +1,5 @@
-# v2.0.4
-## XX/XX/2026
+# v2.1.0
+## 07/11/2026
 
 1. [](#improved)
     * Fix Grav 2 tagfilter escaping by moving the H5P resizer script from inline content to the Assets API
