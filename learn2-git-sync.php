@@ -18,7 +18,6 @@ class Learn2GitSync extends Learn2
             'onTwigInitialized' => ['onTwigInitialized', 0],
             'onThemeInitialized' => ['onThemeInitialized', 0],
             'onShortcodeHandlers' => ['onShortcodeHandlers', 0],
-            'onTwigSiteVariables' => ['onTwigSiteVariables', 0],
             'onTNTSearchIndex' => ['onTNTSearchIndex', 0],
             'registerNextGenEditorPlugin' => ['registerNextGenEditorPluginShortcodes', 0]
         ];
@@ -38,13 +37,6 @@ class Learn2GitSync extends Learn2
 
         $event['plugins']  = $plugins;
         return $event;
-    }
-
-    public function onTwigSiteVariables()
-    {
-        if ($this->isAdmin() && ($this->grav['config']->get('plugins.shortcode-core.enabled'))) {
-            $this->grav['assets']->add('theme://editor-buttons/admin/js/shortcode-presentation.js');
-        }
     }
 
     public function onTNTSearchIndex(Event $e)
