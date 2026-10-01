@@ -1,3 +1,12 @@
+# v2.1.1
+## XX/XX/2026
+
+1. [](#improved)
+    * Allow pinch-zoom on mobile devices (accessibility)
+1. [](#bugfix)
+    * Git Sync edit links now use the configured remote branch instead of always `master`
+    * Git Sync edit links now strip only a trailing `.git` from the repository URL (fixes repos such as `name.github.io`)
+
 # v2.1.0
 ## 07/11/2026
 
