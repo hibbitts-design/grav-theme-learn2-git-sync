@@ -1,3 +1,10 @@
+# v2.2.1
+## XX/XX/2026
+
+1. [](#improved)
+    * Rewrote README in streamlined style with single screenshot
+    * Added documentation link to the README
+
 # v2.2.0
 ## 10/01/2026
 
