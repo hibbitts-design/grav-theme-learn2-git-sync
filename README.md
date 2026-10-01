@@ -16,6 +16,8 @@
 <img alt="Documentation page with chapter navigation in the sidebar, an Edit this Page link, and previous and next arrows" src="https://raw.githubusercontent.com/hibbitts-design/grav-theme-learn2-git-sync/refs/heads/master/screenshots/screenshot.webp" width="100%">
 </a>
 
+<p>Learn2 with Git Sync – Documentation page</p>
+
 </div>
 
 Learn2 with Git Sync adds what open, collaborative documentation sites need on top of the Learn2 theme: an "Edit this Page" link to each page's source in your Git repository, a choice of visual styles, and shortcodes for rich content.
@@ -28,6 +30,20 @@ Learn2 with Git Sync adds what open, collaborative documentation sites need on t
 - **Search** – instant search with SimpleSearch, plus tag-aware full-text search when the TNTSearch plugin is installed
 - **Built-in shortcodes** – Google Slides, H5P, and PDF
 - **Feeds and versioning** – Atom/RSS feeds and optional document versioning
+
+## When is Learn2 with Git Sync a Good Candidate?
+
+Learn2 with Git Sync is a good fit when you:
+
+- Want an open documentation site built on Grav's Learn2 theme
+- Value "Edit this Page" links so others can suggest and make improvements
+- Want a choice of visual styles for your documentation
+
+Other options might be better when you:
+
+- Need only standard documentation without these extras – the [Learn2 theme](https://github.com/getgrav/grav-theme-learn2) is enough
+- Need a full knowledge base with user accounts, comments, or approval workflows
+- Want zero-server publishing directly from GitHub – consider [Docsify-This](https://docsify-this.net)
 
 ## Quick Start
 
