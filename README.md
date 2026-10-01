@@ -1,90 +1,82 @@
-# Learn2 with Git Sync
+<div align="center">
 
-Learn2 with Git Sync is a customized version of the default [Grav Learn](http://learn.getgrav.org) theme. Includes selectable visual styles.
+# 📘 Learn2 with Git Sync
 
-Want to quickly try out this theme? The [Learn2 with Git Sync Skeleton](https://getgrav.org/downloads/skeletons) is a ready-to-run site with the Learn2 with Git Sync Theme, which also includes the Admin Panel and example content already installed.
+### Designed to accompany the Learn2 with Git Sync Skeleton
 
-![Learn2 with Git Sync](screenshot.jpg)
+<p><em>A Grav theme for open documentation sites – easy to read, with Git-based open editing built in.</em></p>
 
-# Installation
+[![Grav Discord Chat](https://img.shields.io/discord/501836936584101899.svg?logo=discord&colorB=728ADA&label=Grav%20Discord%20Chat)](https://chat.getgrav.org) [![Latest Release](https://img.shields.io/github/v/release/hibbitts-design/grav-theme-learn2-git-sync?style=flat-square&label=Release)](https://github.com/hibbitts-design/grav-theme-learn2-git-sync/releases/latest) [![License](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](https://github.com/hibbitts-design/grav-theme-learn2-git-sync/blob/master/LICENSE) [![PHP](https://img.shields.io/badge/PHP-%3E%3D8.0.2-8892BF?style=flat-square&logo=php&logoColor=white)](https://learn.getgrav.org/17/basics/requirements)
 
-Installing the Learn2 with Git Sync theme can be done in one of two ways. Our GPM (Grav Package Manager) installation method enables you to quickly and easily install the theme with a simple terminal command, while the manual method enables you to do so via a zip file.
+<p>Try the <a href="https://demo.hibbittsdesign.org/grav-learn2-git-sync/">demo</a></p>
 
-The theme is designed to be used to provide a documentation site. You can see this in action at [learn.hibbittsdesign.org](http://learn.hibbittsdesign.org)
+<p>A free, open-source child theme of <a href="https://github.com/getgrav/grav-theme-learn2">Learn2</a>, the Grav documentation theme, built for <a href="https://getgrav.org">Grav CMS</a> with Markdown file-based content, a built-in Admin panel, and no database required. Used by the <a href="https://github.com/hibbitts-design/grav-skeleton-learn2-with-git-sync">Learn2 with Git Sync</a> skeleton package.</p>
 
-## GPM Installation (Preferred)
+<a href="https://raw.githubusercontent.com/hibbitts-design/grav-theme-learn2-git-sync/refs/heads/master/screenshots/screenshot.webp">
+<img alt="Documentation page with chapter navigation in the sidebar, an Edit this Page link, and previous and next arrows" src="https://raw.githubusercontent.com/hibbitts-design/grav-theme-learn2-git-sync/refs/heads/master/screenshots/screenshot.webp" width="100%">
+</a>
 
-The simplest way to install this theme is via the [Grav Package Manager (GPM)](http://learn.getgrav.org/advanced/grav-gpm) through your system's Terminal (also called the command line).  From the root of your Grav install type:
+</div>
 
-    bin/gpm install learn2-git-sync
+Learn2 with Git Sync adds what open, collaborative documentation sites need on top of the Learn2 theme: an "Edit this Page" link to each page's source in your Git repository, a choice of visual styles, and shortcodes for rich content.
 
-This will install the Learn2 with Git Sync theme into your `/user/themes` directory within Grav. Its files can be found under `/your/site/grav/user/themes/learn2-git-sync`.
+## What Sets It Apart
 
-## Manual Installation
+- **Open authoring with Git Sync** – an "Edit this Page" link to each page's Markdown source on GitHub, GitLab, or Bitbucket, worked out automatically from your Git Sync setup or a custom repository URL
+- **Selectable visual styles** – 2026 Refresh, Classic, Hoth, Longyearbyen, or Spitsbergen
+- **Built for documentation** – chapter and docs page types, numbered sidebar navigation, previous and next page arrows, and reading history
+- **Search** – instant search with SimpleSearch, plus tag-aware full-text search when the TNTSearch plugin is installed
+- **Built-in shortcodes** – Google Slides, H5P, and PDF
+- **Feeds and versioning** – Atom/RSS feeds and optional document versioning
 
-To install this theme, just download the zip version of this repository and unzip it under `/your/site/grav/user/themes`. Then, rename the folder to `learn2-git-sync`.
+## Quick Start
 
-You should now have all the theme files under
+The easiest way to get started is the [Learn2 with Git Sync](https://github.com/hibbitts-design/grav-skeleton-learn2-with-git-sync) skeleton package, which includes this theme already configured.
 
-    /your/site/grav/user/themes/learn2-git-sync
+### Installing in an Existing Site
+1. In the Admin Panel, go to **Themes → Add** and install **Learn2 Git Sync**, or from the root of your Grav site run `bin/gpm install learn2-git-sync`
+2. The parent **Learn2** theme and required plugins are installed as dependencies
 
->> NOTE: This theme is a modular component for Grav which requires the [Grav](http://github.com/getgrav/grav), [Error](https://github.com/getgrav/grav-theme-error) and [Problems](https://github.com/getgrav/grav-plugin-problems) plugins.
+### Setting as the Default Theme
+1. In the Admin Panel, go to **Themes**, select **Learn2 Git Sync**, and press **Activate**, or in `user/config/system.yaml` set the theme under `pages`:
+   ```yaml
+   pages:
+     theme: learn2-git-sync
+   ```
+2. Clear the Grav cache (`bin/grav clearcache`)
 
-# Updating
+> [!IMPORTANT]
+> Before setting up Git Sync, remove any `README.md` file from your Grav site's `user` folder. This prevents a possible sync conflict when your new Git repository is created with its own default `README.md`.
 
-As development for the Learn2 with Git Sync theme continues, new versions may become available that add additional features and functionality, improve compatibility with newer Grav releases, and generally provide a better user experience. Updating Learn2 with Git Sync is easy, and can be done through Grav's GPM system, as well as manually.
+> [!TIP]
+> Make your customizations in a child theme (the skeleton package includes one called `mytheme`), so they are kept when Learn2 with Git Sync is updated.
 
-## GPM Update (Preferred)
+## Theme Options
 
-The simplest way to update this theme is via the [Grav Package Manager (GPM)](http://learn.getgrav.org/advanced/grav-gpm). You can do this with this by navigating to the root directory of your Grav install using your system's Terminal (also called command line) and typing the following:
+All options are available in the Admin Panel under **Themes → Learn2 Git Sync**.
 
-    bin/gpm update learn2-git-sync
+- **Git Sync Link Options** – link position (top, bottom, or off), a custom Font Awesome icon, and a custom Git repository tree URL
+- **Learn2 Theme Options** – visual style, document versioning, hide site title, top-level version, home URL, Google Analytics code, and default taxonomy category
 
-This command will check your Grav install to see if your Learn2 with Git Sync theme is due for an update. If a newer release is found, you will be asked whether or not you wish to update. To continue, type `y` and hit enter. The theme will automatically update and clear Grav's cache.
+## Requirements
 
-## Manual Update
+- PHP >= 8.0.2
+- Grav CMS 1.7 or 2.0
+- The [Learn2 theme](https://github.com/getgrav/grav-theme-learn2) and required plugins, installed automatically as dependencies
 
-Manually updating Learn2 with Git Sync is pretty simple. Here is what you will need to do to get this done:
+## Support
 
-* Delete the `your/site/user/themes/learn2-git-sync` directory.
-* Download the new version of the Learn2 with Git Sync theme from either [GitHub](https://github.com/hibbitts-design/grav-theme-learn2-git-sync) or [GetGrav.org](http://getgrav.org/downloads/themes#extras).
-* Unzip the zip file in `your/site/user/themes` and rename the resulting folder to `learn2-git-sync`.
-* Clear the Grav cache. The simplest way to do this is by going to the root Grav directory in terminal and typing `bin/grav clear-cache`.
+### Contact and Support
+- Share your feedback in the [Learn2 with Git Sync Survey](https://docs.google.com/forms/d/e/1FAIpQLSdOAQL_4m56zIvmTQMszTtS6U3pVQ0nZlaxnZfPspEy-i6eOg/viewform)
+- Follow [@hibbittsdesign@mastodon.social](https://mastodon.social/@hibbittsdesign) on Mastodon for updates
+- 👩🏻‍💻🧑🏻‍💻 Join the [Grav Discord](https://chat.getgrav.org) and often find me there
+- Add a ⭐️ [star on GitHub](https://github.com/hibbitts-design/grav-theme-learn2-git-sync) to the Learn2 with Git Sync project repository
+- For bugs or feature requests, [open an issue](https://github.com/hibbitts-design/grav-theme-learn2-git-sync/issues) on GitHub
 
-> Note: Any changes you have made to any of the files listed under this directory will also be removed and replaced by the new set. Any files located elsewhere (for example a YAML settings file placed in `user/config/themes`) will remain intact.
+### Professional Services
 
-### Recompile CSS from SCSS
+By leveraging his extensive UX design expertise and systems-oriented approach, Paul helps teams and individuals utilize open content in education and publication settings. Professional services include user experience and workflow consulting, premium support subscriptions, workshops, and custom development. Interested? Send a note to [paul@hibbittsdesign.org](mailto:paul@hibbittsdesign.org).
 
-To recompile default style using a Sass-compiler, run it on /scss/theme.scss and output to /css-compiled/theme.css, like `node-sass --watch --source-map true scss/theme.scss css-compiled/theme.css`. To do the same for custom styles, run it on /scss/custom and output to /css-compiled/custom, like `node-sass --watch --source-map true scss/custom/ css-compiled/custom`.
+## License
 
-## Features
-
-* Lightweight and minimal for optimal performance
-* Fully responsive with off-page mobile navigation
-* SCSS based CSS source files for easy customization
-* Built specifically for providing easy to read documentation
-* Fontawesome icon support
-
-### Supported Page Templates
-
-* "Docs" template
-* "Chapter" template
-* Error view template
-
-## Setup
-
-🚨Before setting up Git Sync, please make sure to remove the `ReadMe.md` file in your Grav site `user` folder (if one exists). This will prevent a possible sync issue when creating a default `ReadMe.md` file in your new Git repository.🚨
-
-If you want to set Learn2 with Git Sync as the default theme, you can do so by following these steps:
-
-* Navigate to `/your/site/grav/user/config`.
-* Open the **system.yaml** file.
-* Change the `theme:` setting to `theme: learn2-git-sync`.
-* Save your changes.
-* Clear the Grav cache. The simplest way to do this is by going to the root Grav directory in Terminal and typing `bin/grav clear-cache`.
-
-Once this is done, you should be able to see the new theme on the frontend. Keep in mind any customizations made to the previous theme will not be reflected as all of the theme and templating information is now being pulled from the **learn2-git-sync** folder.
-
-### TNTSearch Configuration
-
-The default search route for the TNTSearch plugin (used for the 'Advanced Search' feature) is set to `/tntsearch`
+MIT – Hibbitts Design
