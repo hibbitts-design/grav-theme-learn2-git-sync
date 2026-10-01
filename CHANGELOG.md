@@ -1,5 +1,5 @@
 # v2.1.1
-## XX/XX/2026
+## 10/01/2026
 
 1. [](#improved)
     * Allow pinch-zoom on mobile devices (accessibility)
