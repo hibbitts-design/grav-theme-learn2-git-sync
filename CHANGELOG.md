@@ -1,3 +1,10 @@
+# v2.2.0
+## 10/01/2026
+
+1. [](#improved)
+    * Removed support for the legacy Presentation plugin (presentation blueprint, iframe partial and editor button)
+    * Removed legacy NextGen Editor shortcode integration (NextGen Editor has been replaced by Editor Pro)
+
 # v2.1.1
 ## 10/01/2026
 
