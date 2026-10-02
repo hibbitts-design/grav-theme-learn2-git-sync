@@ -12,11 +12,9 @@
 
 <p>A free, open-source child theme of <a href="https://github.com/getgrav/grav-theme-learn2">Learn2</a>, the Grav documentation theme, built for <a href="https://getgrav.org">Grav CMS</a> with Markdown file-based content, a built-in Admin panel, and no database required. Used by the <a href="https://github.com/hibbitts-design/grav-skeleton-learn2-with-git-sync">Learn2 with Git Sync</a> skeleton package.</p>
 
-<a href="https://raw.githubusercontent.com/hibbitts-design/grav-theme-learn2-git-sync/refs/heads/master/screenshots/screenshot.webp">
-<img alt="Documentation page with chapter navigation in the sidebar, an Edit this Page link, and previous and next arrows" src="https://raw.githubusercontent.com/hibbitts-design/grav-theme-learn2-git-sync/refs/heads/master/screenshots/screenshot.webp" width="100%">
-</a>
+<a href="https://raw.githubusercontent.com/hibbitts-design/grav-theme-learn2-git-sync/refs/heads/master/screenshots/screenshot.webp"><img alt="Documentation page with chapter navigation in the sidebar, an Edit this Page link, and previous and next arrows, in light mode" src="https://raw.githubusercontent.com/hibbitts-design/grav-theme-learn2-git-sync/refs/heads/master/screenshots/screenshot.webp" width="49%"></a> <a href="https://raw.githubusercontent.com/hibbitts-design/grav-theme-learn2-git-sync/refs/heads/master/screenshots/screenshot-dark.webp"><img alt="Documentation page with chapter navigation in the sidebar, an Edit this Page link, and previous and next arrows, in dark mode" src="https://raw.githubusercontent.com/hibbitts-design/grav-theme-learn2-git-sync/refs/heads/master/screenshots/screenshot-dark.webp" width="49%"></a>
 
-<p>Learn2 with Git Sync – Documentation page</p>
+<p>Learn2 with Git Sync – Documentation page in light mode (left) and dark mode (right)</p>
 
 </div>
 
