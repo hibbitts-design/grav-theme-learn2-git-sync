@@ -9,6 +9,8 @@ github:
     tree:
 default_taxonomy_category: docs
 style: default
+dark_mode:
+    mode: disabled                                  # disabled | enabled | auto
 
 streams:
  schemes:

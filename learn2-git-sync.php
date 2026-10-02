@@ -94,7 +94,24 @@ class Learn2GitSync extends Learn2
                 'theme://css/styles',
                 'theme://css'
             );
+            // Styles removed in 2.3.0 (or any unknown style) fall back to Classic
+            if (!$current) {
+                $style = 'theme';
+                $current = self::fileFinder($style, '.css', 'theme://css');
+            }
             $assets->addCss($current, 101);
+
+            // Dark Mode: each style has a dark companion (e.g. theme-2026-dark.css), loaded after the style and before custom.css
+            $mode = $config['dark_mode']['mode'] ?? 'disabled';
+            $dark = ($mode === 'enabled' || $mode === 'auto') ? self::fileFinder($style . '-dark', '.css', 'theme://css/styles', 'theme://css') : false;
+            if ($dark && $mode === 'enabled') {
+                $assets->addCss($dark, 101);
+            } elseif ($dark && !$this->grav['config']->get('system.assets.css_pipeline')) {
+                $assets->addCss($dark, ['priority' => 101, 'media' => '(prefers-color-scheme: dark)']);
+            } elseif ($dark) {
+                // A pipelined stylesheet loses its media attribute, so the template links it separately
+                $this->grav['twig']->twig_vars['dark_mode_auto_css'] = $dark;
+            }
         }
     }
 

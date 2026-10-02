@@ -20,12 +20,12 @@
 
 </div>
 
-Learn2 with Git Sync adds what open, collaborative documentation sites need on top of the Learn2 theme: an "Edit this Page" link to each page's source in your Git repository, a choice of visual styles, and shortcodes for rich content.
+Learn2 with Git Sync adds what open, collaborative documentation sites need on top of the Learn2 theme: an "Edit this Page" link to each page's source in your Git repository, a choice of visual styles with Dark Mode, and shortcodes for rich content.
 
 ## What Sets It Apart
 
 - **Open authoring with Git Sync** – an "Edit this Page" link to each page's Markdown source on GitHub, GitLab, or Bitbucket, worked out automatically from your Git Sync setup or a custom repository URL
-- **Selectable visual styles** – 2026 Refresh, Classic, Hoth, Longyearbyen, or Spitsbergen
+- **Visual styles** – 2026 Refresh or Classic, with Dark Mode off, on, or following the visitor's system setting
 - **Built for documentation** – chapter and docs page types, numbered sidebar navigation, previous and next page arrows, and reading history
 - **Search** – instant search with SimpleSearch, plus tag-aware full-text search when the TNTSearch plugin is installed
 - **Built-in shortcodes** – Google Slides, H5P, and PDF
@@ -71,8 +71,9 @@ The easiest way to get started is the [Learn2 with Git Sync](https://github.com/
 
 All options are available in the Admin Panel under **Themes → Learn2 Git Sync**.
 
+- **Visual Style** – style (2026 Refresh or Classic) and Dark Mode (Off, On, or Auto (System))
 - **Git Sync Link Options** – link position (top, bottom, or off), a custom Font Awesome icon, and a custom Git repository tree URL
-- **Learn2 Theme Options** – visual style, document versioning, hide site title, top-level version, home URL, Google Analytics code, and default taxonomy category
+- **Learn2 Theme Options** – document versioning, hide site title, top-level version, home URL, Google Analytics code, and default taxonomy category
 
 ## Requirements
 

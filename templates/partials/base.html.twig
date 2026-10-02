@@ -35,6 +35,9 @@
 
     {% block assets deferred %}
         {{ assets.css()|raw }}
+        {% if dark_mode_auto_css %}
+        <link rel="stylesheet" href="{{ url(dark_mode_auto_css) }}" media="(prefers-color-scheme: dark)">
+        {% endif %}
         {{ assets.js()|raw }}
     {% endblock %}
 

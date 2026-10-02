@@ -1,0 +1,368 @@
+/*
+===============================================================================================================================
+Dark Mode CSS for the 2026 Refresh style (loaded when Dark Mode is On, or for Auto when the visitor's OS prefers dark).
+Slate surfaces and sky-blue accents from the 2026 Refresh palette; code colours from Tomorrow Night (the dark twin of the
+Highlight plugin's default "learn" theme). Colour pairs meet WCAG AA contrast.
+===============================================================================================================================
+*/
+
+:root {
+    --l2d-bg: #0f172a;
+    --l2d-surface: #1e293b;
+    --l2d-raised: #273449;
+    --l2d-border: #334155;
+    --l2d-text: #d7dee8;
+    --l2d-strong: #f1f5f9;
+    --l2d-muted: #94a3b8;
+    --l2d-link: #38bdf8;
+    --l2d-link-hover: #7dd3fc;
+    --l2d-button: #0369a1;
+    --l2d-button-hover: #075985;
+    --l2d-button-shadow: #0c4a6e;
+    --l2d-code: #f9a8d4;
+    color-scheme: dark;
+}
+
+/* Keep embedded pages (e.g. H5P, PDF, Google Slides) transparent instead of on a white backdrop */
+iframe {
+    color-scheme: normal;
+}
+
+/* Base: page, text, links, headings */
+
+body {
+    background: var(--l2d-bg);
+    color: var(--l2d-text);
+}
+
+a {
+    color: var(--l2d-link);
+}
+
+a:hover {
+    color: var(--l2d-link-hover);
+}
+
+h1, h2, h3, h4, h5, h6,
+#body-inner strong {
+    color: var(--l2d-strong);
+}
+
+/* Search highlights: muted amber instead of the browser's bright yellow */
+
+mark {
+    background: rgba(250, 204, 21, 0.3);
+    color: var(--l2d-strong);
+}
+
+::selection {
+    background: rgba(56, 189, 248, 0.35);
+    color: var(--l2d-strong);
+}
+
+/* Keyboard focus: show a clear ring for keyboard users only */
+
+a:focus-visible,
+button:focus-visible,
+.button:focus-visible,
+select:focus-visible {
+    outline: 2px solid var(--l2d-link) !important;
+    outline-offset: 2px;
+}
+
+/* Top bar, breadcrumbs, page navigation */
+
+#top-bar {
+    background: var(--l2d-surface);
+}
+
+/* Prev/next arrows: muted until hovered, so the content keeps the focus */
+
+#body .nav {
+    color: var(--l2d-muted);
+}
+
+#body .nav:hover {
+    background: var(--l2d-surface);
+    color: var(--l2d-link);
+}
+
+#body a.anchor-link {
+    color: var(--l2d-muted);
+}
+
+#body a.anchor-link:hover {
+    color: var(--l2d-link);
+}
+
+#chapter h1,
+hr {
+    border-bottom-color: var(--l2d-border);
+}
+
+#footer {
+    color: var(--l2d-muted);
+}
+
+.sidebar-hidden #overlay {
+    background: rgba(15, 23, 42, 0.6);
+}
+
+/* Sidebar: the slate sidebar stays; the active page joins the dark page instead of a white tab */
+
+#sidebar h5.active a,
+#sidebar ul li.active > a {
+    background: var(--l2d-bg);
+    color: var(--l2d-strong) !important;
+}
+
+#sidebar h5.active i {
+    color: var(--l2d-strong) !important;
+}
+
+#sidebar ul li.visited > a .read-icon {
+    color: var(--l2d-link);
+}
+
+/* Content: quotes, notices, code, tables, images */
+
+blockquote {
+    border-left-color: var(--l2d-border);
+}
+
+blockquote p,
+blockquote cite,
+blockquote > blockquote > blockquote p {
+    color: var(--l2d-muted);
+}
+
+/* Notice boxes (nested blockquotes): opaque tinted backgrounds (they cover the nested quote borders), readable text, dark label text on the coloured bar */
+
+blockquote > blockquote > blockquote > p {
+    background: linear-gradient(rgba(240, 179, 126, 0.12), rgba(240, 179, 126, 0.12)), var(--l2d-bg);
+    color: var(--l2d-text);
+}
+
+blockquote > blockquote > blockquote > blockquote > p {
+    border-top-color: #b14748;
+    background: linear-gradient(rgba(217, 83, 79, 0.14), rgba(217, 83, 79, 0.14)), var(--l2d-bg);
+    color: var(--l2d-text);
+}
+
+blockquote > blockquote > blockquote > blockquote > blockquote > p {
+    background: linear-gradient(rgba(106, 176, 222, 0.12), rgba(106, 176, 222, 0.12)), var(--l2d-bg);
+    color: var(--l2d-text);
+}
+
+blockquote > blockquote > blockquote > blockquote > blockquote > blockquote > p {
+    border-top-color: #4d9852;
+    background: linear-gradient(rgba(92, 184, 92, 0.12), rgba(92, 184, 92, 0.12)), var(--l2d-bg);
+    color: var(--l2d-text);
+}
+
+blockquote > blockquote > blockquote p:first-child:before,
+blockquote > blockquote > blockquote p:first-child:after {
+    color: var(--l2d-bg);
+}
+
+blockquote > blockquote > blockquote > blockquote > p:first-child:before,
+blockquote > blockquote > blockquote > blockquote > p:first-child:after {
+    color: #fff;
+}
+
+blockquote > blockquote > blockquote > blockquote > blockquote > p:first-child:before,
+blockquote > blockquote > blockquote > blockquote > blockquote > p:first-child:after {
+    color: var(--l2d-bg);
+}
+
+code {
+    background: var(--l2d-surface);
+    color: var(--l2d-code);
+}
+
+pre {
+    background: var(--l2d-surface);
+    border-color: var(--l2d-border);
+}
+
+pre code {
+    background: transparent;
+    color: #c5c8c6;
+}
+
+.copy-to-clipboard {
+    background-color: var(--l2d-raised);
+    color: var(--l2d-text);
+}
+
+.copy-to-clipboard:hover,
+pre .copy-to-clipboard:hover {
+    background-color: var(--l2d-border);
+}
+
+pre .copy-to-clipboard {
+    background-color: var(--l2d-raised);
+    border-color: var(--l2d-border);
+}
+
+table,
+td {
+    border-color: var(--l2d-border);
+}
+
+th {
+    background: var(--l2d-surface);
+    color: var(--l2d-strong);
+}
+
+#body img.border,
+#body .video-container.border {
+    border-color: var(--l2d-border) !important;
+}
+
+#body img.shadow,
+#body .video-container.shadow {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+#body .bordered,
+.bg {
+    background: var(--l2d-surface);
+    border-color: var(--l2d-border);
+}
+
+/* Syntax-highlighted code (Highlight plugin): Tomorrow Night colours for the default "learn" (Tomorrow) theme; prefixed with pre so they win over the plugin's stylesheet, which loads later */
+
+pre .hljs {
+    color: #c5c8c6;
+    background: transparent;
+}
+
+pre .hljs-comment,
+pre .hljs-title,
+pre .hljs-quote {
+    color: #969896;
+}
+
+pre .hljs-variable,
+pre .hljs-attribute,
+pre .hljs-attr,
+pre .hljs-tag,
+pre .hljs-name,
+pre .hljs-regexp,
+pre .hljs-strong,
+pre .hljs-bullet,
+pre .hljs-selector-tag,
+pre .hljs-selector-id,
+pre .hljs-selector-class,
+pre .hljs-deletion {
+    color: #e08080;
+}
+
+pre .hljs-number,
+pre .hljs-preprocessor,
+pre .hljs-pragma,
+pre .hljs-built_in,
+pre .hljs-literal,
+pre .hljs-params,
+pre .hljs-constant,
+pre .hljs-emphasis,
+pre .hljs-meta,
+pre .hljs-selector-attr,
+pre .hljs-selector-pseudo {
+    color: #de935f;
+}
+
+pre .hljs-section,
+pre .hljs-type {
+    color: #f0c674;
+}
+
+pre .hljs-string,
+pre .hljs-value,
+pre .hljs-inheritance,
+pre .hljs-header,
+pre .hljs-code,
+pre .hljs-addition {
+    color: #b5bd68;
+}
+
+pre .hljs-symbol,
+pre .hljs-link,
+pre .hljs-link_label {
+    color: #8abeb7;
+}
+
+pre .hljs-function,
+pre .hljs-title.function_ {
+    color: #81a2be;
+}
+
+pre .hljs-keyword,
+pre .hljs-link_url {
+    color: #b294bb;
+}
+
+/* Buttons and forms */
+
+.button {
+    background: var(--l2d-button);
+    box-shadow: 0 3px 0 var(--l2d-button-shadow);
+}
+
+.button:hover {
+    background: var(--l2d-button-hover);
+    box-shadow: 0 3px 0 var(--l2d-button-shadow);
+}
+
+.button-secondary,
+.button-secondary:hover {
+    color: var(--l2d-bg);
+}
+
+textarea,
+input[type="email"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="url"],
+select[multiple=multiple] {
+    background-color: var(--l2d-surface);
+    border-color: var(--l2d-border);
+    color: var(--l2d-text);
+}
+
+.searchbox input,
+#sidebar .searchbox input {
+    background: transparent;
+    color: #fff;
+}
+
+.version-chooser select {
+    background-color: var(--l2d-surface);
+    border-color: var(--l2d-border);
+    color: var(--l2d-text);
+}
+
+fieldset {
+    border-color: var(--l2d-border);
+}
+
+/* Lifecycle page type */
+
+.lifecycle #body-inner .level-1 + ol,
+.lifecycle #body-inner .level-2 + ol,
+.lifecycle #body-inner .level-3 + ol,
+.lifecycle #body-inner .level-4 + ol {
+    background: var(--l2d-surface);
+    color: var(--l2d-text);
+}
+
+/* 2026 Refresh: deepen the blue behind white icon text to meet contrast */
+
+.bullet-icon,
+.bullet-icon-1 {
+    background: var(--l2d-button);
+}
