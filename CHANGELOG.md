@@ -5,6 +5,7 @@
     * 2026 Refresh: added Dark Mode option (Off, On, Auto (System)) for both styles, in a new Visual Style section
 1. [](#improved)
     * Streamlined Style options to 2026 Refresh and Classic (sites using a removed style now use Classic)
+    * Added light and dark mode screenshots to README
 
 # v2.2.1
 ## 10/02/2026
