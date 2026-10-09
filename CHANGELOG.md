@@ -1,3 +1,9 @@
+# v2.3.2
+## 10/09/2026
+
+1. [](#improved)
+    * On Grav 2 with Admin 2, the Setup Git Sync link opens Git Sync's settings directly
+
 # v2.3.1
 ## 10/07/2026
 
