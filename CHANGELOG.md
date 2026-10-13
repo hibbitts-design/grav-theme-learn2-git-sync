@@ -1,3 +1,10 @@
+# v2.3.3
+## 10/13/2026
+
+1. [](#bugfix)
+    * The Git Link Position option's Off choice shows its label in Admin on hosts with PHP's native YAML extension
+    * The Custom Git Link Font Awesome Icon field shows as a normal text box in Admin 2
+
 # v2.3.2
 ## 10/09/2026
 
