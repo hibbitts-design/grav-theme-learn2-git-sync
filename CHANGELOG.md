@@ -1,3 +1,11 @@
+# v2.3.4
+## 10/XX/2026
+
+1. [](#improved)
+    * Dark mode: code blocks switch to the One Dark colours that match the Prism Highlight plugin's default One Light theme, instead of staying light
+1. [](#bugfix)
+    * The [googleslides] shortcode embeds the slides on Grav 2, instead of showing the iframe code as text (it now runs after Markdown, as the [pdf] and [h5p] shortcodes do)
+
 # v2.3.3
 ## 10/13/2026
 
