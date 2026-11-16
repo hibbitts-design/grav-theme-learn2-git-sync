@@ -1,3 +1,9 @@
+# v2.3.5
+## 11/16/2026
+
+1. [](#improved)
+    * README: a notice that it will soon be in maintenance mode, pointing to Helios, the Grav team's documentation theme, for new documentation sites
+
 # v2.3.4
 ## 10/23/2026
 
