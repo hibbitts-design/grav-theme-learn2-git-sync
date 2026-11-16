@@ -18,6 +18,9 @@
 
 </div>
 
+> [!NOTE]
+> **Soon in maintenance mode:** Learn2 with Git Sync, with the Grav Learn2 with Git Sync skeleton it accompanies, will soon be in maintenance mode – bug fixes will continue, but no new features are planned. For new documentation sites, see [Helios](https://getgrav.org/premium/helios), the Grav team's modern documentation theme – a paid Grav Premium theme with a ready-to-run package of sample content ([demo](https://demo.getgrav.org/helios/)); its sales help fund Grav CMS development.
+
 Learn2 with Git Sync adds what open, collaborative documentation sites need on top of the Learn2 theme: an "Edit this Page" link to each page's source in your Git repository, a choice of visual styles with Dark Mode, and shortcodes for rich content.
 
 ## What Sets It Apart
