@@ -21,7 +21,8 @@ class H5PShortcode extends Shortcode
             if ($h5psrc) {
                 $this->grav['assets']->addJs('https://h5p.org/sites/all/modules/h5p/library/js/h5p-resizer.js');
 
-                $output = '<p><iframe src="'.$h5psrc.'" width="400" height="300" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>';
+                // full width from the start, so the H5P content sets itself up at its real size (Firefox doesn't rescale it later)
+                $output = '<p><iframe src="'.$h5psrc.'" width="400" height="300" style="width:100%" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>';
 
                 return $output;
             }
